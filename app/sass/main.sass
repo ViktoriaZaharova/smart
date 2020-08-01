@@ -1,0 +1,419 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  &:hover
+    text-decoration: none
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+
+.content
+  flex: 1 0 auto
+
+footer
+  flex: 0 0 auto
+
+button
+  outline: none
+  box-shadow: none
+  padding: 0
+  box-sizing: border-box
+  transition: .3s ease
+  cursor: pointer
+  border: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  width: 100%
+  height: 32px
+  font-size: 11px
+  font-weight: 600
+  .icon
+    padding: 0 5px 0 0
+
+.btn-accent
+  border-radius: 15px
+  color: #fff
+  background: $accent
+  &:hover
+    background: rgb(233, 139, 47)
+    color: #fff
+
+.btn-blue
+  border-radius: 15px
+  background-color: #2cc1dc
+  color: #fff
+  &:hover
+    background: #26a8bf
+    color: #fff
+
+h2
+  font-size: 18px
+  font-weight: bold
+  text-transform: uppercase
+
+.container
+  max-width: 970px
+
+//error
+.error
+  padding: 20px 0
+  height: 100vh
+  .logo-footer
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 80px auto
+  .text-box
+    margin: 16px 0 12px
+    font-size: 10.5px
+    max-width: 360px
+  .btn
+    max-width: 101px
+    font-size: 11px
+    font-weight: 600
+    z-index: 1
+    position: relative
+  .container
+    height: 100%
+    .row
+      height: 100%
+      align-items: flex-end
+      justify-content: center
+
+.error-title__img
+  display: flex
+  align-items: center
+  justify-content: center
+
+.img-bg
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 100%
+  max-width: 554px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.error-title
+  position: relative
+
+//main-slider
+.main-slider
+  background: #ffcb05
+  //height: 100%
+  //.container
+  //  height: 100vh
+  //.row
+  //  height: 100%
+
+
+
+.main-slider__content
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 154px 0 100px
+  position: relative
+  height: 100%
+  &:before
+    content: ''
+    position: absolute
+    background: url("../img/decor-img1.png") no-repeat center
+      size: contain
+    width: 489px
+    height: 274px
+    right: 0
+    top: 0
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 454px
+    height: 170px
+    background: url("../img/decor-img2.png") no-repeat center
+      size: contain
+
+.main-slider__image
+  max-width: 482px
+  width: 100%
+  position: relative
+  z-index: 1
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 -70px
+  .img
+    width: 100%
+
+.main-slider__image-bg
+  position: absolute
+  left: 45%
+  top: 45%
+  transform: translate(-50%,-50%)
+  width: 681px
+
+.main-slider__text
+  max-width: 418px
+  width: 100%
+  position: relative
+  z-index: 1
+  .item-text
+    background: url("../img/tooltip-bg.png") no-repeat center
+      size: 100%
+    width: 418px
+    height: 252px
+    padding: 51px 51px 63px 94px
+    margin: 0 0 94px
+    font-size: 15.5px
+    color: #252525
+  .btn
+    max-width: 212px
+    height: 51px
+    border-radius: 7px
+    text-transform: uppercase
+    font-size: 13px
+    font-weight: normal
+    margin: 0 0 0 50px
+    .icon
+      margin: 0 0 0 20px
+
+.name-products__slide
+  font-size: 19.5px
+  font-weight: 600
+  color: $accent
+  padding: 0 0 20px
+  margin: 0 0 23px
+  width: 100%
+  text-transform: uppercase
+  border-bottom: 3px dotted $accent
+
+//header
+.header
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 2
+  background: rgba(#fff, .9)
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #fd5f00
+  padding: 7px 20px
+
+.menu
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  li
+    a
+      color: #1b1b1b
+      font-size: 13px
+      padding: 22px 0
+      border-bottom: 2px solid transparent
+      &:hover
+        color: $accent
+        border-bottom-color: $accent
+    .active
+      color: $accent
+      border-bottom-color: $accent
+
+.button-group
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.links-search
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 15px
+
+header
+  .button-group
+    justify-content: flex-end
+
+
+
+.btn-score
+  max-width: 155px
+
+.btn-partner
+  max-width: 87px
+  margin: 0 16px 0 13px
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
+
+.slick-dots
+  position: absolute
+  left: 50%
+  transform: translate(-50%,0)
+  bottom: 47px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  max-width: 970px
+  margin: 0 auto
+  li
+    margin: 0 19px 0 0
+    width: 7px
+    height: 7px
+    background: rgba(#fff, .4)
+    border-radius: 50%
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    width: 13px
+    height: 13px
+    background: $accent
+
+.slick-arrow
+  z-index: 1
+  opacity: 1
+
+.slick-prev
+  left: 0
+  width: 63px
+  height: 44px
+  background-color: #fd5f00
+  padding: 13px 18px
+  border-radius: 0 15px 15px 0
+  &:before
+    content: ''
+    border: none
+    width: 13px
+    height: 21px
+    background: url("../img/arrow-left.png") no-repeat center
+      size: 100%
+    position: absolute
+    right: 18px
+    top: 50%
+    transform: translate(0,-50%)
+    opacity: 1
+
+.slick-next
+  right: 0
+  width: 63px
+  height: 44px
+  background-color: #fd5f00
+  padding: 13px 18px
+  border-radius: 15px 0 0 15px
+  &:before
+    content: ''
+    border: none
+    width: 13px
+    height: 21px
+    background: url("../img/arrow-right.png") no-repeat center
+      size: 100%
+    position: absolute
+    left: 18px
+    top: 50%
+    transform: translate(0,-50%)
+    opacity: 1
+
+@import "media"
+// Всегда в конце
