@@ -70,6 +70,7 @@ body
 
 html, body
   overflow-x: hidden
+  height: 100%
 
 img
   display: block
@@ -97,6 +98,9 @@ a
 
 footer
   flex: 0 0 auto
+  margin: 65px 0 0
+  background: #f9f9f9
+  padding: 34px 0 30px
 
 button
   outline: none
@@ -139,6 +143,14 @@ h2
   font-size: 18px
   font-weight: bold
   text-transform: uppercase
+
+h1
+  font-size: 27.5px
+  font-weight: 600
+  color: #f05901
+  text-transform: uppercase
+  margin: 0 0 65px
+  width: 100%
 
 .container
   max-width: 970px
@@ -191,11 +203,11 @@ h2
 //main-slider
 .main-slider
   background: #ffcb05
-  //height: 100%
-  //.container
-  //  height: 100vh
-  //.row
-  //  height: 100%
+  height: 100vh
+  .container, .slick-list, .slick-track
+    height: 100%
+  .row
+    height: 100%
 
 
 
@@ -282,20 +294,24 @@ h2
   border-bottom: 3px dotted $accent
 
 //header
+header
+  position: relative
+  background: rgba(#fff, .9)
+  border-bottom: solid 1px rgba(#dedede, .63)
+
 .header
   position: absolute
   left: 0
   top: 0
   width: 100%
   z-index: 2
-  background: rgba(#fff, .9)
 
 .logo
   display: flex
   align-items: center
   justify-content: center
   background: #fd5f00
-  padding: 7px 20px
+  padding: 9px 20px
 
 .menu
   width: 100%
@@ -414,6 +430,135 @@ header
     top: 50%
     transform: translate(0,-50%)
     opacity: 1
+
+.slick-slide
+  outline: none
+
+//nav-breadcrumb
+.nav-breadcrumb
+  margin: 27px 0 70px
+  padding: 0
+
+.breadcrumb
+  padding: 0
+  background: transparent
+  border-radius: 0
+  color: #999999
+  font-size: 10.5px
+
+.breadcrumb-item
+  margin: 0 0 4px
+  a
+    color: #999999
+    font-size: 10.5px
+
+.breadcrumb-item+.breadcrumb-item::before
+  content: '>'
+  color: #999999
+  padding-right: 10px
+
+.breadcrumb-item+.breadcrumb-item
+  padding-left: 10px
+  color: #999999
+
+//sales
+.sales-box
+  margin: 0 0 65px
+  font-family: $gotham
+  max-width: 403px
+  width: 100%
+
+.sales-box__image
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 265px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.sales-box__body
+  padding: 34px 0 0
+
+.sales-box__date
+  display: flex
+  align-items: center
+  color: #656565
+  font-size: 13px
+
+.sales-box__name
+  color: #000000
+  font-size: 19px
+  font-weight: 500
+  letter-spacing: -0.38px
+  margin: 0 0 10px
+  text-transform: uppercase
+
+.date-icon
+  margin: 0 8px 0 0
+  width: 17px
+  min-width: 17px
+
+.sales-box__disable
+  .sales-box__name
+    color: rgba(0, 0, 0, 0.6)
+  .sales-box__date
+    color: rgba(101, 101, 101, 0.55)
+  .date-icon
+    filter: grayscale(1)
+    opacity: .66
+
+//footer
+.list-social
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin: 6px 0 0
+  li
+    margin: 0 13px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 24px
+      display: flex
+      align-items: center
+      justify-content: center
+
+.list-social__text
+  font-size: 10.5px
+  color: #3b3b3b
+  max-width: 93px
+  margin: 0 0 0 auto
+
+.footer-box
+  font-size: 10.5px
+  color: #000
+  letter-spacing: -0.11px
+  display: flex
+  align-items: center
+  &:last-child
+    margin: 0
+
+.footer-box__text
+  max-width: 228px
+  margin: 0 0 0 11px
+
+.phone
+  margin: 20px 0 3px 0
+
+.footer-box__icon
+  width: 12px
+  min-width: 12px
+
+.copyright
+  margin: 20px 0 0
+  text-align: right
+  font-size: 10px
+  color: #a5a5a5
+
 
 @import "media"
 // Всегда в конце
