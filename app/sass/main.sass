@@ -139,7 +139,7 @@ button
     color: #fff
 
 h2
-  font-size: 18px
+  font-size: 20px
   font-weight: bold
   text-transform: uppercase
 
@@ -579,12 +579,12 @@ header
 
 .present
   position: relative
-  width: 447px
-  height: 289px
+  width: 454px
+  height: 294px
   background: url("../img/tooltip-bg2.png") no-repeat center
     size: 100%
   padding: 36px 68px 20px 120px
-  margin: 0 0 0 -73px
+  margin: 0 0 0 -80px
   .description
     margin: 25px 0
     font-size: 15px
@@ -798,10 +798,10 @@ header
   margin: 0 0 10px
 
 .list-country
-  font-size: 9.5px
+  font-size: 12px
   height: 100%
   width: 100%
-  column-count: 7
+  column-count: 5
 
   li
     a
@@ -815,6 +815,269 @@ header
   color: #fd6408
   margin: 10px 0 5px
 
+//catalog
+.filter-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 25px
+
+.filter-item
+  margin: 0 0 10px
+
+.filter-links
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  border: solid 1px #9e9e9e
+    radius: 10px
+  padding: 9px 19px
+  font-size: 15.5px
+  color: #8f8f8f
+  &:hover
+    border-color: $accent
+    color: $accent
+
+
+.filter-links.active
+  color: $accent
+  border-color: $accent
+
+.product-title__category
+  margin: 30px 0 45px
+  font-size: 20px
+  font-weight: 600
+
+.product-card
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  justify-content: center
+  margin: 0 0 30px
+  color: #000000
+  font-size: 14px
+
+.product-card__name
+  max-width: 180px
+  margin: 10px auto 0
+  color: #000000
+  line-height: 1.1
+  &:hover
+    color: $accent
+  span
+    display: block
+
+.packing
+  margin: 10px auto 0
+  color: #68676c
+  font-size: 9.5px
+
+.new-box
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  margin: 9px auto 0
+  width: 67px
+  height: 23px
+  border-radius: 10px
+  border: solid 1.5px #fd5f00
+  color: $accent
+  font-size: 11px
+  font-weight: 600
+
+//politics
+.politics
+  padding: 0 0 70px
+
+.text-item
+  color: #242424
+  font-size: 12px
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+  ul
+    padding: 0 0 0 20px
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+    li
+      margin: 0 0 20px
+
+
+
+      &:last-child
+        margin: 0
+
+.list-arrow
+  li
+    position: relative
+    padding: 0 0 0 24px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 5px
+      height: 9px
+      background: url("../img/arrow-right-orange.png") no-repeat center
+        size: contain
+
+//mission-company
+.mission-company
+  background: url("../img/about-bg.jpg") no-repeat center
+    size: cover
+  padding: 80px 0 190px
+  color: #fff
+  h2
+    margin: 0 0 36px
+  .text-box
+    max-width: 355px
+    width: 100%
+    font-size: 14px
+    font-weight: 500
+
+//history
+.history
+  padding: 59px 0 66px
+
+.history-img
+  margin: 22px 0 0
+
+//geography
+.geography
+  padding: 46px 0 37px
+  background: #fbfbfb
+  h2
+    margin: 0 0 30px
+  .text-box
+    font-size: 14px
+    margin: 10px 0 0
+    max-width: 457px
+    width: 100%
+
+.geography-shares
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+
+.geography-share
+  padding: 5px 0 5px 35px
+  border-left: solid 2px #fe6910
+  font-size: 14px
+  color: #222222
+  .percent
+    font-size: 55px
+    margin: 0 0 10px
+    color: #3f3f3f
+
+//model-business
+.model-business
+  padding: 70px 0
+
+.model-business__wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
+  margin: 90px 0 0
+
+.model-business__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  justify-content: flex-start
+  color: #333132
+  font-size: 12.5px
+  max-width: 130px
+  width: 100%
+  h4
+    font-size: 14.5px
+    font-weight: 600
+    color: #333132
+    min-height: 60px
+    margin: 29px auto 15px
+
+.model-business__icon
+  height: 72px
+  display: flex
+  align-items: center
+  justify-content: center
+
+//choose
+.choose
+  background: #fbfbfb
+  padding: 44px 0 20px
+  h2
+    margin: 0 0 60px
+
+.choose-box
+  margin: 0 0 50px
+  display: flex
+  align-items: center
+  justify-content: center
+
+//market-place
+.market-place
+  padding: 70px 0 40px
+  h2
+    margin: 0 0 38px
+
+.market-place__box
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  color: #555555
+  font-size: 13.5px
+  margin: 0 0 40px
+
+.market-place__icon
+  width: 122px
+  display: flex
+  align-items: center
+  justify-content: center
+  min-width: 122px
+
+.market-place__text
+  max-width: 275px
+  width: 100%
+  margin: 0 0 0 25px
+
+.search
+  padding: 0 0 108px
+  .form-search
+    margin: 0 0 46px
+  h2
+    margin: 0 0 44px
+
+.search-result__box
+  width: 100%
+  border-top: dashed 1.2px #b6b6b6
+  padding: 17px 0 28px
+  font-size: 13px
+  .text-box
+    max-width: 840px
+    width: 100%
+
+.category-name
+  color: #fd5f00
+  font-size: 12px
+  font-weight: bold
+  text-transform: uppercase
+
+.name-product
+  margin: 17px 0 12px
+  font-size: 17.5px
+  font-weight: 600
+  color: #000
 
 
 @import "media"
