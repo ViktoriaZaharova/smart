@@ -158,6 +158,20 @@ h3
   font-weight: 600
   letter-spacing: -0.4px
 
+input
+  width: 100%
+  border-radius: 7px
+  border: solid 1px #a9a9a9
+  height: 37px
+  padding: 0 20px
+  box-sizing: border-box
+  outline: none
+  font-size: 14.5px
+  font-family: $default-font
+  color: #595858
+  &::placeholder
+    color: #595858
+
 
 .container
   max-width: 970px
@@ -1079,6 +1093,279 @@ header
   font-weight: 600
   color: #000
 
+//.contacts
+.contacts
+  padding: 0 0 40px
+
+.maps
+  width: 100%
+  height: 453px
+  iframe
+    width: 100%
+    height: 100%
+
+.contacts-box__item
+  padding: 0 0 40px
+  h3
+    margin: 0 0 30px
+    font-size: 17.5px
+    font-weight: 600
+    text-transform: none
+  .phone
+    margin: 20px 0 10px
+  .btn
+    margin: 45px 0 0
+
+.contacts-box__wrapper
+  border-bottom: dashed 1.2px #c1c1c1
+  margin: 0 0 50px
+
+.contacts-box
+  display: flex
+  align-items: flex-start
+  color: #000000
+  font-size: 14.5px
+
+.btn-border-orange
+  display: flex
+  align-items: center
+  border-radius: 10px
+  max-width: 132px
+  padding: 0
+  height: 22px
+
+.contacts-box__icon
+  margin: 0 13px 0 0
+  width: 17px
+  height: 12px
+  min-width: 17px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.callback
+  padding: 54px 0 60px
+
+.description-callback
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  margin: 57px 0 27px
+  color: #3e3e3e
+  font-size: 16px
+
+  span
+    color: #8d8c8c
+    font-size: 10.5px
+  .decor-item
+    font-size: 18px
+    font-family: 'bebas', sans-serif
+
+.decor-item
+  color: #8d8c8c
+  font-size: 22.5px
+  font-family: 'bebas', sans-serif
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  color: #595858
+  margin: 9px 0
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 25px
+    min-width: 25px
+    height: 24px
+    display: inline-block
+    vertical-align: middle
+    border: solid 1px #fd5f00
+      radius: 7px
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 10px 0 0
+  .label
+    display: inline-block
+    vertical-align: middle
+    font-size: 11.5px
+    cursor: pointer
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 13px
+      height: 12px
+      border-radius: 3px
+      background: $accent
+  a
+    display: inline
+    color: #595858
+    text-decoration: underline
+
+.form-callback
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  label
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    input, textarea
+      width: calc(100% - 14px)
+
+  button
+    max-width: 260px
+    height: 43px
+    border-radius: 7px
+    margin: 20px 0 0
+    font-size: 13.5px
+    font-weight: normal
+    color: #fff
+    text-transform: uppercase
+    .icon
+      width: 10px
+      height: 9px
+      margin: 0 0 0 14px
+  .checkbox
+    align-items: center
+    justify-content: flex-start
+
+
+.form-group
+  max-width: 419px
+  width: 100%
+  margin: 0 0 20px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+
+.form-error
+  color: #fd5f00
+  font-size: 10.5px
+  padding: 0 0 0 20px
+
+.error-input
+  border-color: #fd5f00
+
+.dropdown-form
+  margin: 0
+  display: flex
+  align-items: center
+  width: calc(100% - 14px)
+  .dropdown-menu
+    width: 100%
+  .dropDown-item
+    padding: 9px 20px
+    font-size: 14.5px
+    width: 100%
+
+.list-callback
+  li
+    a
+      font-size: 14.5px
+      color: #595858
+      padding: 13px 14px
+      &:hover
+        background: #f3f3f3
+    .active
+      background: #f3f3f3
+
+.scroll-vertical
+  height: 148px
+  overflow-y: auto
+
+.link-accent
+  color: #fd5f00
+  font-size: 10.5px
+  width: 100%
+
+textarea
+  width: 100%
+  border: solid 1px #a9a9a9
+    radius: 7px
+  height: 97px
+  color: #595858
+  padding: 13px 17px
+  outline: none
+  box-sizing: border-box
+  font-size: 14.5px
+  font-family: $default-font
+  &::placeholder
+    color: #595858
+
+
+.modal__div
+  position: fixed
+  max-width: 536px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+  .modal__close
+    position: relative
+    margin: 26px auto 0
+    max-width: 124px
+    height: 43px
+    border-radius: 7px
+    font-size: 13.5px
+    font-weight: normal
+    text-transform: uppercase
+  .modal__wrapper
+    background: #fff
+    width: 100%
+    height: auto
+    overflow: auto
+    margin: 50px auto
+    padding: 46px 20px 36px
+    box-sizing: border-box
+    position: relative
+    text-align: center
+
+.modal-img
+  margin: 0 auto 30px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.modal-description
+  margin: 9px auto 0
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #4b4b4b
+  opacity: 0.41
+  -moz-opacity: 0.41
+  filter: alpha(opacity = 41)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
 
 @import "media"
 // Всегда в конце
