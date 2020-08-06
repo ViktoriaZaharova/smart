@@ -119,6 +119,7 @@ button
   height: 32px
   font-size: 11px
   font-weight: 600
+  padding: 0
   .icon
     padding: 0 5px 0 0
 
@@ -289,7 +290,7 @@ input
       size: 100%
     width: 418px
     height: 252px
-    padding: 51px 51px 63px 94px
+    padding: 50px 50px 25px 90px
     margin: 0 0 94px
     font-size: 15.5px
     color: #252525
@@ -325,7 +326,7 @@ header
   left: 0
   top: 0
   width: 100%
-  z-index: 2
+  z-index: 8
 
 .logo
   display: flex
@@ -588,8 +589,11 @@ header
 .present-img
   width: 100%
   margin: -15px 0 0
+  height: 100%
   img
     width: 100%
+    height: 100%
+    object-fit: cover
 
 .present
   position: relative
@@ -635,6 +639,8 @@ header
   .btn
     max-width: 326px
     margin: 0 90px 0 0
+    height: 72px
+    border-radius: 0
     &:last-child
       margin: 0
   .button-group
@@ -1174,6 +1180,7 @@ header
   flex-direction: row
   align-items: center
   justify-content: flex-start
+  text-align: left
   color: #595858
   margin: 9px 0
   .checkbox-inp
@@ -1209,7 +1216,7 @@ header
       border-radius: 3px
       background: $accent
   a
-    display: inline
+    display: inline-block
     color: #595858
     text-decoration: underline
 
@@ -1288,6 +1295,25 @@ header
 .scroll-vertical
   height: 148px
   overflow-y: auto
+  &::-webkit-scrollbar
+    width: 2px
+    height: 1px
+  &::-webkit-scrollbar-track
+    background-color: $accent
+    border-radius: 2.5px
+    height: 5px
+  &::-webkit-scrollbar-track-piece
+    background-color: #e4e4e4
+  &::-webkit-scrollbar-thumb
+    background-color: $accent
+    border-radius: 2.5px
+    height: 5px
+  &::-webkit-scrollbar-corner
+    background-color: #e4e4e4
+  &::-webkit-resizer
+    background-color: $accent
+    border-radius: 2.5px
+    height: 5px
 
 .link-accent
   color: #fd5f00
@@ -1354,7 +1380,7 @@ textarea
   margin: 9px auto 0
 
 .overlay
-  z-index: 100
+  z-index: 7
   position: fixed
   background-color: #4b4b4b
   opacity: 0.41
@@ -1366,6 +1392,389 @@ textarea
   left: 0
   cursor: pointer
   display: none
+
+//product
+.product-image
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.product-content
+  font-size: 13px
+  .text-box
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+blockquote
+  margin: 33px 0 28px
+  width: 435px
+  height: 104px
+  padding: 27px 56px 27px 34px
+  background: url("../img/tooltip-bg4.png") no-repeat center
+    size: 100%
+  font-size: 13px
+  color: $accent
+  strong
+    font-weight: bold
+
+.packaging
+  margin: 30px 0 0
+
+.packaging-list
+  margin: 15px 0 0
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+  font-size: 15px
+  font-weight: bold
+  font-family: $gotham
+  color: $accent
+  li
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+    &:first-child
+      .packaging-img
+        width: 35px
+    &:nth-child(2)
+      .packaging-img
+        width: 39px
+    &:nth-child(3)
+      .packaging-img
+        width: 45px
+    &:nth-child(4)
+      .packaging-img
+        width: 50px
+    &:last-child
+      .packaging-img
+        width: 55px
+
+.packaging-img
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 10px
+
+.advantages-product
+  padding: 60px 0 69px
+
+.analogies-product
+  padding: 0 0 80px
+  h2
+    margin: 0 0 50px
+  .btn
+    margin: 0 auto
+    height: 50px
+    max-width: 262px
+    text-transform: uppercase
+    font-weight: normal
+    font-size: 14px
+    border-radius: 7px
+    .icon
+      width: 10px
+      margin: 0 0 0 10px
+
+.advantages-product__box
+  border-right: 1.5px dashed #c7c7c7
+  flex: 1
+  padding: 20px 22px
+  font-size: 14px
+  &:last-child
+    border: none
+  .val
+    font-size: 22px
+    color: $accent
+    margin: 10px 0 2px
+  span
+    color: #9f9f9f
+    font-size: 13px
+
+.advantages-product__list
+  width: 100%
+  display: flex
+  align-items: stretch
+  border: 1.5px dashed #c7c7c7
+  margin: 40px 0 0
+
+.vacancy-content
+  margin: 0 0 50px
+  .text-box
+    margin: 30px 0 0
+    font-size: 14px
+    color: #777777
+    span
+      color: #3d3d3d
+
+.vacancy-advantages__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  font-size: 13px
+  font-family: $gotham
+  h3
+    font-size: 18px
+    font-weight: 600
+    margin: 20px auto 15px
+    text-transform: none
+
+
+.vacancy-advantages__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 94px
+
+.actual-vacancy
+  padding: 60px 0
+
+.table-vacancy
+  margin: 46px 0 58px
+  padding: 0 28px 0 0
+  width: 100%
+  height: 433px
+  color: #333
+  font-size: 12px
+
+.table-vacancy__name
+  font-weight: 500
+  color: #1f1f1f
+  width: 30%
+
+.table-vacancy__schedule
+  font-size: 10px
+  color: #818181
+  width: 30%
+
+.table-vacancy__sum, .table-vacancy__city
+  width: 20%
+
+.table-vacancy__line
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-wrap: wrap
+  border-radius: 2px
+  padding: 25px 29px
+  &:nth-child(odd)
+    background: #fbfbfb
+
+.actual-vacancy__box
+  margin: 0 0 15px
+  min-height: 254px
+  border: dashed 1.5px #d9dadb
+  padding: 27px 27px 29px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  font-size: 14px
+  color: #333
+  .btn
+    border-radius: 7px
+    text-transform: uppercase
+    font-weight: normal
+    height: 50px
+    font-size: 13.5px
+    margin: auto 0 0
+  h3
+    font-size: 17.5px
+    font-weight: 600
+    text-transform: none
+
+.actual-vacancy__box-top
+  width: 100%
+  margin: 0 0 25px
+  display: flex
+  align-items: center
+
+.actual-vacancy__box-icon
+  width: 47px
+  min-width: 47px
+  height: 41px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 13px 0 0
+
+.links-document
+  display: flex
+  align-items: center
+  margin: 0 0 18px
+  color: #333333
+  font-size: 14px
+  &:last-child
+    margin: 0
+  .icon
+    width: 26px
+    height: 30px
+    min-width: 26px
+    margin: 0 22px 0 0
+  .text
+    text-decoration: underline
+
+.label-file
+  position: relative
+  width: 163px
+  height: 37px
+  border-radius: 7px
+  border: solid 1px #a9a9a9
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #3e3e3e
+  font-size: 14.5px
+  cursor: pointer
+  margin: 0 0 16px
+  input
+    display: none
+
+.form-modal
+  .label-file
+    align-items: center
+    justify-content: center
+    max-width: 163px
+    width: 100%
+  button
+    max-width: none
+    margin: 0 auto
+
+.result-file
+  color: #424242
+  font-size: 12.5px
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+
+.icon-delete
+  margin: 0 6px 0 0
+  color: #fd5f00
+  font-size: 12px
+  font-weight: bold
+  &:hover
+    color: #000
+
+
+.attach-file__top
+  display: flex
+  align-items: center
+  text-align: left
+  color: #3e3e3e
+  font-size: 14.5px
+  margin: 0 0 6px
+  .icon
+    margin: 0 11px 0 0
+    width: 18px
+    height: 17px
+    min-width: 18px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.attach-file__size
+  color: #8d8c8c
+  font-size: 10.5px
+  padding: 0 0 0 29px
+  
+.links-confirm
+  text-align: left
+
+.attach-file
+  max-width: 160px
+  width: 100%
+  text-align: left
+
+.form-group__file
+  align-items: flex-start
+
+#vacancy__modal
+  max-width: 470px
+  .modal__close
+    margin: 0 -22px 8px auto
+    width: 22px
+    height: 22px
+  .modal__wrapper
+    padding: 21px 47px 47px
+    box-shadow: 0.9px 1.8px 21px 0 rgba(26, 25, 23, 0.2)
+  h2
+    text-align: left
+  .description-callback
+    margin: 33px 0 10px
+    p
+      text-align: left
+      margin: 0 0 8px
+    span
+      text-align: right
+      width: 100%
+
+.form-search__header
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  right: -2px
+  width: 302px
+  margin: 0
+  border-radius: 17.5px
+  z-index: 8
+  display: none
+  button
+    left: auto
+    right: 13px
+  input
+    height: 33px
+    box-shadow: 0.9px 1.8px 13px 0 rgba(26, 25, 23, 0.2)
+    padding: 0 30px 0 10px
+
+
+
+.search-wrapper
+  position: relative
+
+.btn-burger
+  display: none
+  align-items: center
+  justify-content: space-between
+  flex-direction: column
+  width: 17px
+  height: 10px
+  margin: 0 0 0 10px
+  span
+    width: 100%
+    height: 2px
+    background: $accent
+
+.mobile-menu
+  position: fixed
+  left: 0
+  width: 290px
+  z-index: 10
+  background: #fff
+  overflow-y: auto
+  height: 100%
+  padding: 20px
+  display: none
+  .menu
+    width: 100%
+    flex-direction: column
+    align-items: flex-start
+    li
+      a
+        padding: 10px 0
+        font-size: 14px
+
+.btn-close__menu
+  margin: 0 0 20px auto
+  cursor: pointer
+  float: right
 
 @import "media"
 // Всегда в конце

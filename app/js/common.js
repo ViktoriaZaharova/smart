@@ -14,6 +14,28 @@ $('.menu li a').each(function () {
     }
 });
 
+$('.links-search').click(function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn();
+    $(this).siblings('.form-search__header').fadeIn();
+});
+
+$('.overlay').click(function () {
+    $('.form-search__header').fadeOut();
+    $('.overlay').fadeOut();
+});
+
+$('.btn-burger').click(function () {
+    $('.overlay').fadeIn();
+   $('.mobile-menu').fadeIn();
+});
+
+$('.btn-close__menu').click(function () {
+    $('.mobile-menu').fadeOut();
+    $('.overlay').fadeOut();
+});
+
+
 // модальные окна (несколько)
 $(document).ready(function () {
     var overlay = $('.overlay');
