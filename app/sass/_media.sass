@@ -1,13 +1,16 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
-
-
 /* Medium Devices, Desktops */
+
+
+@media only screen and (max-width : 1199px)
+  .present
+    width: 454px
+    height: 294px
+
+  .present-img
+    margin: -10px 0 0
+
 @media only screen and (max-width : 992px)
   .btn-partner
     max-width: 80px
@@ -282,7 +285,10 @@
       font-size: 16px
 
   #vacancy__modal .modal__wrapper
-    padding: 20px
+    padding: 20px 30px
+
+  #vacancy__modal .modal__close
+    margin: 0 0 10px auto
 
 @media only screen and (max-width : 575px)
   .footer-box
@@ -400,7 +406,8 @@
   .table-vacancy__sum, .table-vacancy__city
     margin: 10px 0 0
 
-
+  .form-search__header
+    width: 280px
 
 
 
@@ -445,8 +452,20 @@
     border: 1.5px dashed $accent
     background: transparent
     margin: 20px 0
+    width: 100%
+
+  header
+    .container
+      padding: 0
+
+  .btn-burger
+    margin: 0 10px 0 20px
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width : 440px)
+  .form-search__header
+    width: 240px
+
 @media only screen and (max-width : 420px)
   .main-slider__text .item-text
     font-size: 12px
@@ -505,3 +524,10 @@
     max-width: none
     width: 100%
     margin: 0 0 10px
+
+  .form-search__header
+    width: 180px
+
+@media only screen and (min-width : 1200px)
+  .container
+    max-width: 1280px

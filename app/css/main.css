@@ -398,7 +398,8 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 8; }
+  z-index: 8;
+  border: none; }
 
 .logo {
   display: -webkit-box;
@@ -681,13 +682,13 @@ header .button-group {
               justify-content: center; }
 
 .list-social__text {
-  font-size: 10.5px;
+  font-size: 12px;
   color: #3b3b3b;
-  max-width: 93px;
+  max-width: 97px;
   margin: 0 0 0 auto; }
 
 .footer-box {
-  font-size: 10.5px;
+  font-size: 12px;
   color: #000;
   letter-spacing: -0.11px;
   display: -webkit-box;
@@ -718,7 +719,6 @@ header .button-group {
 
 .present-img {
   width: 100%;
-  margin: -15px 0 0;
   height: 100%; }
   .present-img img {
     width: 100%;
@@ -728,8 +728,8 @@ header .button-group {
 
 .present {
   position: relative;
-  width: 454px;
-  height: 294px;
+  width: 620px;
+  height: 100%;
   background: url("../img/tooltip-bg2.png") no-repeat center;
     background-size: 100%;
   padding: 36px 68px 20px 120px;
@@ -1603,7 +1603,7 @@ textarea {
 .modal__div {
   position: fixed;
   max-width: 536px;
-  width: 100%;
+  width: 97%;
   height: 100%;
   top: 45%;
   left: 50%;
@@ -2120,9 +2120,9 @@ blockquote {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 17px;
-  height: 10px;
-  margin: 0 0 0 10px; }
+  width: 22px;
+  height: 15px;
+  margin: 0 0 0 20px; }
   .btn-burger span {
     width: 100%;
     height: 2px;
@@ -2156,12 +2156,14 @@ blockquote {
   cursor: pointer;
   float: right; }
 
-/*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /**/ }
-
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1199px) {
+  .present {
+    width: 454px;
+    height: 294px; }
+  .present-img {
+    margin: -10px 0 0; } }
+
 @media only screen and (max-width: 992px) {
   .btn-partner {
     max-width: 80px;
@@ -2383,7 +2385,9 @@ blockquote {
     .actual-vacancy__box h3 {
       font-size: 16px; }
   #vacancy__modal .modal__wrapper {
-    padding: 20px; } }
+    padding: 20px 30px; }
+  #vacancy__modal .modal__close {
+    margin: 0 0 10px auto; } }
 
 @media only screen and (max-width: 575px) {
   .footer-box {
@@ -2485,7 +2489,9 @@ blockquote {
   .table-vacancy__name, .table-vacancy__schedule, .table-vacancy__sum, .table-vacancy__city {
     width: 50%; }
   .table-vacancy__sum, .table-vacancy__city {
-    margin: 10px 0 0; } }
+    margin: 10px 0 0; }
+  .form-search__header {
+    width: 280px; } }
 
 @media only screen and (max-width: 480px) {
   .logo {
@@ -2525,9 +2531,18 @@ blockquote {
     padding: 20px;
     border: 1.5px dashed #ff5a00;
     background: transparent;
-    margin: 20px 0; } }
+    margin: 20px 0;
+    width: 100%; }
+  header .container {
+    padding: 0; }
+  .btn-burger {
+    margin: 0 10px 0 20px; } }
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 440px) {
+  .form-search__header {
+    width: 240px; } }
+
 @media only screen and (max-width: 420px) {
   .main-slider__text .item-text {
     font-size: 12px;
@@ -2582,4 +2597,10 @@ blockquote {
   .attach-file {
     max-width: none;
     width: 100%;
-    margin: 0 0 10px; } }
+    margin: 0 0 10px; }
+  .form-search__header {
+    width: 180px; } }
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1280px; } }
