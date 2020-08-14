@@ -1754,33 +1754,33 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 500px;
+  max-width: 496px;
   margin: 0 auto; }
 
 .product-content {
-  font-size: 13px; }
+  font-size: 16px; }
   .product-content .text-box p {
     margin: 0 0 20px; }
     .product-content .text-box p:last-child {
       margin: 0; }
 
 blockquote {
-  margin: 33px 0 28px;
-  width: 435px;
-  height: 104px;
-  padding: 27px 56px 27px 34px;
-  background: url("../img/tooltip-bg4.png") no-repeat center;
+  margin: 42px 0 31px;
+  width: 598px;
+  height: 117px;
+  padding: 32px 106px 27px 40px;
+  background: url("../img/tooltip-bg4.svg") no-repeat center;
     background-size: 100%;
-  font-size: 13px;
+  font-size: 16px;
   color: #ff5a00; }
   blockquote strong {
     font-weight: bold; }
 
 .packaging {
-  margin: 30px 0 0; }
+  margin: 49px 0 0; }
 
 .packaging-list {
-  margin: 15px 0 0;
+  margin: 23px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1792,7 +1792,7 @@ blockquote {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "gotham", sans-serif;
   color: #ff5a00; }
@@ -1809,15 +1809,15 @@ blockquote {
             align-items: center;
     text-align: center; }
     .packaging-list li:first-child .packaging-img {
-      width: 35px; }
+      width: 46px; }
     .packaging-list li:nth-child(2) .packaging-img {
-      width: 39px; }
+      width: 51px; }
     .packaging-list li:nth-child(3) .packaging-img {
-      width: 45px; }
+      width: 58px; }
     .packaging-list li:nth-child(4) .packaging-img {
-      width: 50px; }
+      width: 64px; }
     .packaging-list li:last-child .packaging-img {
-      width: 55px; }
+      width: 72px; }
 
 .packaging-img {
   display: -webkit-box;
@@ -1829,15 +1829,15 @@ blockquote {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto 10px; }
+  margin: 0 auto 19px; }
 
 .advantages-product {
-  padding: 60px 0 69px; }
+  padding: 55px 0 57px; }
 
 .analogies-product {
-  padding: 0 0 80px; }
+  padding: 0 0 70px; }
   .analogies-product h2 {
-    margin: 0 0 50px; }
+    margin: 0 0 58px; }
   .analogies-product .btn {
     margin: 0 auto;
     height: 50px;
@@ -1851,21 +1851,22 @@ blockquote {
       margin: 0 0 0 10px; }
 
 .advantages-product__box {
-  border-right: 1.5px dashed #c7c7c7;
+  border-right: 2px dashed #c7c7c7;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 20px 22px;
-  font-size: 14px; }
+  font-size: 16px;
+  color: #4b4b4b; }
   .advantages-product__box:last-child {
     border: none; }
   .advantages-product__box .val {
-    font-size: 22px;
+    font-size: 25px;
     color: #ff5a00;
     margin: 10px 0 2px; }
   .advantages-product__box span {
-    color: #9f9f9f;
-    font-size: 13px; }
+    color: #8d8d8d;
+    font-size: 14px; }
 
 .advantages-product__list {
   width: 100%;
@@ -1875,8 +1876,8 @@ blockquote {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  border: 1.5px dashed #c7c7c7;
-  margin: 40px 0 0; }
+  border: 2px dashed #c7c7c7;
+  margin: 46px 0 0; }
 
 .vacancy-content {
   margin: 0 0 50px; }
@@ -2258,7 +2259,11 @@ blockquote {
   .menu li a {
     padding: 19px 0; }
   .form-group {
-    max-width: 460px; } }
+    max-width: 460px; }
+  blockquote {
+    width: 480px;
+    height: 94px;
+    padding: 20px 45px 20px 30px; } }
 
 @media only screen and (max-width: 992px) {
   .btn-partner {
@@ -2646,7 +2651,8 @@ blockquote {
     border: 1.5px dashed #ff5a00;
     background: transparent;
     margin: 20px 0;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   header .container {
     padding: 0; }
   .btn-burger {
@@ -2713,7 +2719,16 @@ blockquote {
     width: 100%;
     margin: 0 0 10px; }
   .form-search__header {
-    width: 180px; } }
+    width: 180px; }
+  .advantages-product__box {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%; }
+    .advantages-product__box:first-child {
+      border-right: none; }
+    .advantages-product__box:nth-child(3) {
+      border: none;
+        border-bottom: 1.5px dashed #c7c7c7; } }
 
 @media only screen and (min-width: 1200px) {
   .container {

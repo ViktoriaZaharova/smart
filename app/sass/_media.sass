@@ -26,6 +26,11 @@
   .form-group
     max-width: 460px
 
+  blockquote
+    width: 480px
+    height: 94px
+    padding: 20px 45px 20px 30px
+
 @media only screen and (max-width : 992px)
   .btn-partner
     max-width: 80px
@@ -492,6 +497,7 @@
     background: transparent
     margin: 20px 0
     width: 100%
+    height: auto
 
   header
     .container
@@ -566,6 +572,14 @@
 
   .form-search__header
     width: 180px
+
+  .advantages-product__box
+    flex: 100%
+    &:first-child
+      border-right: none
+    &:nth-child(3)
+      border: none
+        bottom: 1.5px dashed #c7c7c7
 
 @media only screen and (min-width : 1200px)
   .container
