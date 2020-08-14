@@ -217,6 +217,10 @@ input {
 .container {
   max-width: 970px; }
 
+.logo-footer {
+  max-width: 230px;
+  width: 100%; }
+
 .error {
   padding: 20px 0;
   height: 100vh; }
@@ -475,6 +479,18 @@ header .button-group {
 
 .btn-score {
   max-width: 155px; }
+  .btn-score .icon {
+    width: 21px;
+    height: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .btn-partner {
   max-width: 87px;
@@ -743,7 +759,7 @@ header .button-group {
   position: relative;
   width: 499px;
   height: 309px;
-  background: url("../img/tooltip-bg2.png") no-repeat center;
+  background: url("../img/tooltip-bg2.svg") no-repeat center;
     background-size: 100%;
   padding: 45px 45px 45px 133px;
   margin: 17px 0 0 -80px; }
@@ -771,6 +787,10 @@ header .button-group {
   font-size: 16px; }
   .terms-action .button-group {
     margin: 50px 0 0; }
+    .terms-action .button-group .icon {
+      width: 31px;
+      height: 30px;
+      min-width: 31px; }
   .terms-action ul {
     margin: 30px 0; }
   .terms-action .text p {
@@ -830,9 +850,14 @@ header .button-group {
   font-weight: 500; }
   .btn-border .icon {
     margin: 0 12px 0 0; }
+  .btn-border svg {
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
   .btn-border:hover {
     color: #ff5a00;
     border-color: #ff5a00; }
+    .btn-border:hover svg {
+      fill: #ff5a00; }
 
 .btn-border-orange {
   border-color: #ff5a00;
@@ -1075,7 +1100,7 @@ header .button-group {
 
 .product-card__name {
   max-width: 250px;
-  margin: 10px auto 0;
+  margin: 22px auto 0;
   color: #000000;
   line-height: 1.1; }
   .product-card__name:hover {
@@ -1113,7 +1138,7 @@ header .button-group {
 
 .text-item {
   color: #242424;
-  font-size: 12px; }
+  font-size: 14px; }
   .text-item p {
     margin: 0 0 20px; }
     .text-item p:last-child {
@@ -1195,7 +1220,10 @@ header .button-group {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 100%; }
+  .geography-img img {
+    width: 100%; }
 
 .geography-shares {
   display: -webkit-box;
@@ -1269,6 +1297,7 @@ header .button-group {
 
 .model-business__icon {
   height: 72px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1278,6 +1307,9 @@ header .button-group {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .model-business__icon img {
+    height: 100%;
+    width: auto; }
 
 .choose {
   background: #fbfbfb;
@@ -1416,7 +1448,6 @@ header .button-group {
 .contacts-box__icon {
   margin: 0 13px 0 0;
   width: 17px;
-  height: 12px;
   min-width: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1427,6 +1458,8 @@ header .button-group {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+  .contacts-box__icon img {
+    width: 100%; }
 
 .callback {
   padding: 54px 0 60px; }
@@ -1916,7 +1949,11 @@ blockquote {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 94px; }
+  height: 94px;
+  width: 100%; }
+  .vacancy-advantages__icon img {
+    height: 100%;
+    width: auto; }
 
 .actual-vacancy {
   padding: 60px 0; }
@@ -2021,8 +2058,8 @@ blockquote {
   height: 63px; }
 
 .actual-vacancy__box3 .actual-vacancy__box-icon {
-  width: 54px;
-  min-width: 54px;
+  width: 64px;
+  min-width: 64px;
   height: 71px; }
 
 .links-document {
@@ -2044,9 +2081,14 @@ blockquote {
     margin: 0 22px 0 0; }
   .links-document .text {
     text-decoration: underline; }
+  .links-document svg {
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
   .links-document:hover {
     color: #ff5a00;
     border-color: #ff5a00; }
+    .links-document:hover svg {
+      fill: #ff5a00; }
 
 .label-file {
   position: relative;

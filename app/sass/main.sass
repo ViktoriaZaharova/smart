@@ -177,11 +177,16 @@ input
 .container
   max-width: 970px
 
+.logo-footer
+  max-width: 230px
+  width: 100%
+
 //error
 .error
   padding: 20px 0
   height: 100vh
   .logo-footer
+
     display: flex
     align-items: center
     justify-content: center
@@ -379,6 +384,12 @@ header
 
 .btn-score
   max-width: 155px
+  .icon
+    width: 21px
+    height: 16px
+    display: flex
+    align-items: center
+    justify-content: center
 
 .btn-partner
   max-width: 87px
@@ -606,7 +617,7 @@ header
   position: relative
   width: 499px
   height: 309px
-  background: url("../img/tooltip-bg2.png") no-repeat center
+  background: url("../img/tooltip-bg2.svg") no-repeat center
     size: 100%
   padding: 45px 45px 45px 133px
   margin: 17px 0 0 -80px
@@ -634,6 +645,10 @@ header
   font-size: 16px
   .button-group
     margin: 50px 0 0
+    .icon
+      width: 31px
+      height: 30px
+      min-width: 31px
   ul
     margin: 30px 0
   .text
@@ -683,9 +698,13 @@ header
   font-weight: 500
   .icon
     margin: 0 12px 0 0
+  svg
+    transition: .3s ease
   &:hover
     color: $accent
     border-color: $accent
+    svg
+      fill: $accent
 
 .btn-border-orange
   border-color: $accent
@@ -900,7 +919,7 @@ header
 
 .product-card__name
   max-width: 250px
-  margin: 10px auto 0
+  margin: 22px auto 0
   color: #000000
   line-height: 1.1
   &:hover
@@ -933,7 +952,7 @@ header
 
 .text-item
   color: #242424
-  font-size: 12px
+  font-size: 14px
   p
     margin: 0 0 20px
     &:last-child
@@ -1013,6 +1032,9 @@ header
   display: flex
   align-items: center
   justify-content: center
+  width: 100%
+  img
+    width: 100%
 
 .geography-shares
   display: flex
@@ -1064,9 +1086,13 @@ header
 
 .model-business__icon
   height: 72px
+  width: 100%
   display: flex
   align-items: center
   justify-content: center
+  img
+    height: 100%
+    width: auto
 
 //choose
 .choose
@@ -1182,11 +1208,12 @@ header
 .contacts-box__icon
   margin: 0 13px 0 0
   width: 17px
-  height: 12px
   min-width: 17px
   display: flex
   align-items: center
   justify-content: flex-start
+  img
+    width: 100%
 
 .callback
   padding: 54px 0 60px
@@ -1578,6 +1605,10 @@ blockquote
   align-items: center
   justify-content: center
   height: 94px
+  width: 100%
+  img
+    height: 100%
+    width: auto
 
 .actual-vacancy
   padding: 60px 0
@@ -1662,8 +1693,8 @@ blockquote
 
 .actual-vacancy__box3
   .actual-vacancy__box-icon
-    width: 54px
-    min-width: 54px
+    width: 64px
+    min-width: 64px
     height: 71px
 
 .links-document
@@ -1681,9 +1712,13 @@ blockquote
     margin: 0 22px 0 0
   .text
     text-decoration: underline
+  svg
+    transition: .3s ease
   &:hover
     color: $accent
     border-color: $accent
+    svg
+      fill: $accent
 
 .label-file
   position: relative
