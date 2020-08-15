@@ -1758,7 +1758,11 @@ textarea {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 100%; }
+  .modal-img img {
+    max-width: 45px;
+    width: 100%; }
 
 .modal-description {
   margin: 9px auto 0; }
