@@ -35,6 +35,24 @@ $('.btn-close__menu').click(function () {
     $('.overlay').fadeOut();
 });
 
+// smi
+$('.smi-wrapper .row ').each(function () {
+    if ($(this).find('.smi-box').length > 5) {
+        $(this).find('.smi-box').slice(5).hide();
+    }
+
+});
+
+$('.btn-loader').on('click', function (e) {
+    e.preventDefault();
+    $('.smi-box:hidden').slice(0, 5).slideDown();
+    //
+    // var onBlock = $('.equipment-product:hidden').length;
+    // if(onBlock <= 0) {
+    //     $('.load-more-wrap').hide();
+    // }
+});
+
 
 // модальные окна (несколько)
 $(document).ready(function () {
