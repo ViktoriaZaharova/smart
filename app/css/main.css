@@ -2290,19 +2290,14 @@ blockquote {
   float: right; }
 
 .smi {
-  margin: 112px 0 85px; }
-  .smi .text-box {
-    line-height: 1.25;
-    letter-spacing: 0.11px; }
-
-.smi-wrapper {
-  margin: 23px 0 50px;
-  background: #f8f8f8;
-  padding: 40px 0 33px; }
+  margin: 111px 0 14px; }
+  .smi h1 {
+    margin: 0 0 50px; }
 
 .smi-box {
   width: 100%;
-  background: #fff;
+  height: 350px;
+  background: #131313;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2314,8 +2309,9 @@ blockquote {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 26px 16px 28px 22px;
-  margin: 0 0 28px; }
+  padding: 38px 37px;
+  margin: 0 0 42px;
+  position: relative; }
   .smi-box .text-box {
     letter-spacing: 0.13px;
     font-size: 18px;
@@ -2323,9 +2319,8 @@ blockquote {
     padding: 0 30px 0 0; }
 
 .smi-box__image {
-  max-width: 473px;
-  height: 266px;
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2334,40 +2329,46 @@ blockquote {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  opacity: .3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .smi-box__image img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
 
-.smi-box__content {
-  padding: 0 0 0 72px;
-  width: calc(100% - 473px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
 .smi-box__title {
+  position: relative;
+  z-index: 1;
   font-size: 29.5px;
   font-weight: 600;
   letter-spacing: -0.59px;
-  margin: 0 0 26px;
-  color: #1c1c1c;
-  text-decoration: underline;
-  max-width: 530px; }
+  color: #fff;
+  width: 100%; }
   .smi-box__title:hover {
     color: #ff5a00; }
 
 .logo-smi {
-  margin: auto 0 0 auto; }
+  width: 113px;
+  height: 113px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 40px;
+  position: relative;
+  z-index: 1; }
 
 .btn-loader {
   height: 51px;
