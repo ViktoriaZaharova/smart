@@ -27,6 +27,7 @@ $('.overlay').click(function () {
 
 $('.btn-burger').click(function () {
     // $('.overlay').fadeIn();
+    $(this).toggleClass('click');
    $('.mobile-menu').fadeToggle();
 });
 
