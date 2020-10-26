@@ -732,9 +732,21 @@ header .button-group {
 
 .copyright {
   margin: 20px 0 0;
-  text-align: right;
   font-size: 10px;
-  color: #a5a5a5; }
+  color: #a5a5a5;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .copyright .links {
+    text-decoration: underline;
+    color: #a5a5a5;
+    display: none; }
+  .copyright p {
+    margin: 0 0 0 auto; }
 
 .present-img {
   width: 100%;
@@ -2264,7 +2276,8 @@ blockquote {
 .mobile-menu {
   position: fixed;
   left: 0;
-  width: 290px;
+  top: 67px;
+  width: 100%;
   z-index: 10;
   background: #fff;
   overflow-y: auto;
@@ -2284,15 +2297,11 @@ blockquote {
       padding: 10px 0;
       font-size: 14px; }
 
-.btn-close__menu {
-  margin: 0 0 20px auto;
-  cursor: pointer;
-  float: right; }
-
 .smi {
   margin: 111px 0 14px; }
   .smi h1 {
-    margin: 0 0 50px; }
+    margin: 0 0 50px;
+    font-size: 27.5px; }
 
 .smi-box {
   width: 100%;
@@ -2392,6 +2401,36 @@ blockquote {
     -webkit-transition: .3s ease;
     transition: .3s ease; }
 
+.btn-scroll-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  bottom: 222px;
+  right: 111px;
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  background: #ff5500;
+  cursor: pointer; }
+
+.btn-smi {
+  max-width: 185px;
+  margin: 20px auto 0;
+  height: 50px;
+  font-size: 15.5px;
+  padding: 8px 0;
+  border-radius: 25px; }
+  .btn-smi img {
+    width: 32px;
+    margin: 0 8px 0 0; }
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1199px) {
   .present {
@@ -2413,19 +2452,13 @@ blockquote {
     width: 480px;
     height: 94px;
     padding: 20px 45px 20px 30px; }
-  .smi-box__image {
-    max-width: 300px;
-    height: 220px; }
-  .smi-box__content {
-    width: calc(100% - 300px);
-    padding: 0 0 0 30px; }
-    .smi-box__content .text-box {
-      padding: 0;
-      font-size: 16px; }
   .smi-box__title {
     font-size: 24px; }
   .smi {
-    margin: 70px 0 50px; } }
+    margin: 70px 0 50px; }
+  .btn-scroll-top {
+    bottom: 20px;
+    right: 20px; } }
 
 @media only screen and (max-width: 992px) {
   .btn-partner {
@@ -2643,18 +2676,17 @@ blockquote {
     width: 400px; }
   .main-slider__text {
     max-width: 400px; }
-  .smi-box__content {
-    width: 100%;
-    padding: 0; }
-  .smi-box__image {
-    margin: 0 auto 30px;
-    max-width: none; }
   .smi-box__title {
     width: 100%;
     font-size: 20px;
     max-width: none; }
+  .smi-box {
+    height: auto;
+    padding: 20px; }
   .logo-smi {
-    margin: 30px 0 0 auto; } }
+    width: 80px;
+    height: 80px;
+    margin: 0 0 20px; } }
 
 @media only screen and (max-width: 700px) {
   .main-slider__content {
@@ -2902,13 +2934,7 @@ blockquote {
       border-right: none; }
     .advantages-product__box:nth-child(3) {
       border: none;
-        border-bottom: 1.5px dashed #c7c7c7; }
-  .smi-box__image {
-    height: 200px; }
-  .smi-box {
-    padding: 20px; }
-  .smi-box__title {
-    margin: 0 0 20px; } }
+        border-bottom: 1.5px dashed #c7c7c7; } }
 
 @media only screen and (min-width: 1200px) {
   .container {

@@ -26,31 +26,21 @@ $('.overlay').click(function () {
 });
 
 $('.btn-burger').click(function () {
-    $('.overlay').fadeIn();
-   $('.mobile-menu').fadeIn();
+    // $('.overlay').fadeIn();
+   $('.mobile-menu').fadeToggle();
 });
 
-$('.btn-close__menu').click(function () {
-    $('.mobile-menu').fadeOut();
-    $('.overlay').fadeOut();
-});
+// $('.btn-close__menu').click(function () {
+//     $('.mobile-menu').fadeOut();
+//     // $('.overlay').fadeOut();
+// });
 
-// smi
-$('.smi-wrapper .row ').each(function () {
-    if ($(this).find('.smi-box').length > 5) {
-        $(this).find('.smi-box').slice(5).hide();
-    }
 
-});
 
-$('.btn-loader').on('click', function (e) {
-    e.preventDefault();
-    $('.smi-box:hidden').slice(0, 5).slideDown();
-    //
-    // var onBlock = $('.equipment-product:hidden').length;
-    // if(onBlock <= 0) {
-    //     $('.load-more-wrap').hide();
-    // }
+$("body").on("click", ".btn-scroll-top", function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, "slow")
 });
 
 

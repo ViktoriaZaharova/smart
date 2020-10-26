@@ -596,9 +596,17 @@ header
 
 .copyright
   margin: 20px 0 0
-  text-align: right
   font-size: 10px
   color: #a5a5a5
+  width: 100%
+  display: flex
+  align-items: center
+  .links
+    text-decoration: underline
+    color: #a5a5a5
+    display: none
+  p
+    margin: 0 0 0 auto
 
 //sale
 .present-img
@@ -1861,7 +1869,8 @@ blockquote
 .mobile-menu
   position: fixed
   left: 0
-  width: 290px
+  top: 67px
+  width: 100%
   z-index: 10
   background: #fff
   overflow-y: auto
@@ -1877,10 +1886,10 @@ blockquote
         padding: 10px 0
         font-size: 14px
 
-.btn-close__menu
-  margin: 0 0 20px auto
-  cursor: pointer
-  float: right
+//.btn-close__menu
+//  margin: 0 0 20px auto
+//  cursor: pointer
+//  float: right
 
 
 //smi
@@ -1888,6 +1897,7 @@ blockquote
   margin: 111px 0 14px
   h1
     margin: 0 0 50px
+    font-size: 27.5px
 
 
 .smi-box
@@ -1967,6 +1977,29 @@ blockquote
     transform: rotate(90deg)
     transition: .3s ease
 
+.btn-scroll-top
+  display: flex
+  align-items: center
+  justify-content: center
+  position: fixed
+  bottom: 222px
+  right: 111px
+  border-radius: 50%
+  width: 57px
+  height: 57px
+  background: #ff5500
+  cursor: pointer
+
+.btn-smi
+  max-width: 185px
+  margin: 20px auto 0
+  height: 50px
+  font-size: 15.5px
+  padding: 8px 0
+  border-radius: 25px
+  img
+    width: 32px
+    margin: 0 8px 0 0
 
 @import "media"
 // Всегда в конце

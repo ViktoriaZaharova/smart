@@ -26,7 +26,7 @@
 <body>
 
 <div class="mobile-menu">
-    <div class="btn-close__menu"><img src="img/close.png" alt=""></div>
+<!--    <div class="btn-close__menu"><img src="img/close.png" alt=""></div>-->
     <nav class="navigation">
         <ul class="menu">
             <li><a href="about.html">О компании</a></li>
@@ -36,6 +36,19 @@
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
+
+    <form method="post" class="form-search form-search__header">
+        <label>
+            <input type="text" name="search" placeholder="" required>
+        </label>
+        <button type="submit"><img src="img/search.svg" alt=""></button>
+    </form>
+
+    <ul class="list-social">
+        <li><a href="#"><img src="img/insta.svg" alt=""></a></li>
+        <li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+        <li><a href="#"><img src="img/ok.svg" alt=""></a></li>
+    </ul>
 </div>
 
 <div class="wrapper">
@@ -180,7 +193,7 @@
                     <a href="index.html" class="logo-footer"><img src="img/logo-footer.svg" alt=""></a>
                 </div>
 
-                <div class="col-12 col-sm-7 col-md-4 col-lg-4 offset-lg-1 offset-md-1">
+                <div class="col-12 col-sm-7 col-md-3 col-lg-3">
                     <div class="footer-box">
                         <div class="footer-box__icon"><img src="img/location.svg" alt=""></div>
                         <div class="footer-box__text">456217, Челябинская область, г. Златоуст,
@@ -199,7 +212,14 @@
                     </a>
                 </div>
 
-                <div class="col-12 col-md-3 col-lg-2 offset-lg-1">
+                <div class="col-md-2 col-lg-3">
+                    <a href="#" class="btn btn-accent btn-smi">
+                        <img src="img/smi.png" alt="">
+                        Мы в СМИ
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-3 col-lg-2">
                     <p class="list-social__text">Следите за нами в соцсетях</p>
                     <ul class="list-social">
                         <li><a href="#"><img src="img/insta.svg" alt=""></a></li>
@@ -209,7 +229,9 @@
                 </div>
 
                 <div class="col-12">
-                    <div class="copyright">© 2020 Компания «Смарт»</div>
+                    <div class="copyright">
+                        <a href="#" class="links">Полная версия сайта</a>
+                        <p>© 2020 Компания «Смарт»</p></div>
                 </div>
             </div>
         </div>
@@ -319,6 +341,8 @@
     </div>
 </div>
 <div class="overlay"></div><!-- Пoдлoжкa -->
+
+<div class="btn-scroll-top"><img src="img/arrow-top.png" alt=""></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
