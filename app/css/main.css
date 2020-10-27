@@ -2342,6 +2342,13 @@ blockquote {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 0 20px; }
+    .mobile-menu .button-group .btn {
+      font-size: 14px;
+      height: 35px; }
+    .mobile-menu .button-group .btn-partner {
+      max-width: 100px; }
+    .mobile-menu .button-group .btn-score {
+      max-width: 150px; }
 
 .smi {
   margin: 111px 0 14px; }
