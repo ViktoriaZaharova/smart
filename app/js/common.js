@@ -32,24 +32,12 @@ $('.btn-burger').click(function () {
 });
 
 
-
-
 $("body").on("click", ".btn-scroll-top", function () {
     $("html, body").animate({
         scrollTop: 0
     }, "slow")
 });
 
-$(document).on("scroll", window, function () {
-    if ($(window).scrollTop()>1000)
-    {
-        $(".btn-scroll-top").show();
-    }
-    else
-    {
-        $(".btn-scroll-top").hide();
-    }
-});
 
 
 // модальные окна (несколько)

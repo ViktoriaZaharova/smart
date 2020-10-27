@@ -2318,7 +2318,7 @@ blockquote {
       .mobile-menu .menu li:last-child {
         margin: 0; }
       .mobile-menu .menu li a {
-        font-size: 14px;
+        font-size: 16px;
         color: #ff5a00;
         padding: 0; }
       .mobile-menu .menu li .active {
@@ -2469,7 +2469,9 @@ blockquote {
   transition: .3s ease;
   background: url("../img/up_no_active.svg") no-repeat center;
     background-size: contain;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden; }
   .btn-scroll-top:hover {
     background: url("../img/up_active.svg") no-repeat center;
       background-size: contain; }
@@ -2992,8 +2994,6 @@ blockquote {
     .advantages-product__box:nth-child(3) {
       border: none;
         border-bottom: 1.5px dashed #c7c7c7; }
-  header {
-    height: 55px; }
   .mobile-menu {
     top: 55px;
     height: calc(100% - 55px); } }
