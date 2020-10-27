@@ -31,10 +31,6 @@ $('.btn-burger').click(function () {
    $('.mobile-menu').fadeToggle();
 });
 
-// $('.btn-close__menu').click(function () {
-//     $('.mobile-menu').fadeOut();
-//     // $('.overlay').fadeOut();
-// });
 
 
 
@@ -42,6 +38,17 @@ $("body").on("click", ".btn-scroll-top", function () {
     $("html, body").animate({
         scrollTop: 0
     }, "slow")
+});
+
+$(document).on("scroll", window, function () {
+    if ($(window).scrollTop()>1000)
+    {
+        $(".btn-scroll-top").show();
+    }
+    else
+    {
+        $(".btn-scroll-top").hide();
+    }
 });
 
 
