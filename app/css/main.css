@@ -2320,11 +2320,15 @@ blockquote {
       .mobile-menu .menu li a {
         font-size: 1.4375em;
         color: #ff5a00;
-        padding: 0; }
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600; }
       .mobile-menu .menu li .active {
         border: none; }
   .mobile-menu .form-search {
     margin: 40px 0 20px;
+    overflow: visible;
+    max-width: 360px;
     border: none;
       border-radius: 0; }
     .mobile-menu .form-search input {
@@ -2340,17 +2344,19 @@ blockquote {
     .mobile-menu .form-search svg {
       fill: #ff5a00; }
   .mobile-menu .button-group {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin: 0 0 20px; }
+    margin: 0 0 20px;
+    max-width: 360px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .mobile-menu .button-group .btn {
-      font-size: 15px;
-      height: 38px; }
+      font-size: 14px;
+      height: 38px;
+      border-radius: 20px; }
     .mobile-menu .button-group .btn-partner {
-      max-width: 150px; }
+      max-width: 48%; }
     .mobile-menu .button-group .btn-score {
-      max-width: 150px; }
+      max-width: 48%; }
   .mobile-menu .list-social {
     margin: 0;
     -webkit-box-pack: start;
@@ -2584,7 +2590,8 @@ blockquote {
   .menu {
     padding: 0; }
     .menu li a {
-      padding: 21px 0; }
+      padding: 21px 0;
+      font-size: 12px; }
   .form-group {
     max-width: 380px; } }
 
@@ -2614,7 +2621,7 @@ blockquote {
     max-width: 75px;
     font-size: 10px; }
   .menu li a {
-    font-size: 12px; }
+    font-size: 11px; }
   .terms-action .btn {
     margin: 0 30px 0 0;
     height: 50px;
@@ -2910,13 +2917,13 @@ blockquote {
     border-radius: 10px;
     font-size: 14px; }
   .copyright .links {
-    display: block; } }
+    display: block; }
+  header .search-wrapper, header .btn {
+    display: none; } }
 
 @media only screen and (max-width: 500px) {
   header {
     background: #ff5a00; }
-    header .search-wrapper, header .btn {
-      display: none; }
     header .container {
       padding: 0; }
   .btn-burger {
@@ -3027,8 +3034,10 @@ blockquote {
       border: none;
         border-bottom: 1.5px dashed #c7c7c7; }
   .mobile-menu {
-    top: 55px;
-    height: calc(100% - 55px); } }
+    top: 67px;
+    height: calc(100% - 67px); }
+  .logo {
+    padding: 10px 0; } }
 
 @media only screen and (min-width: 1200px) {
   .container {

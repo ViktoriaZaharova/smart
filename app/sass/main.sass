@@ -1908,10 +1908,14 @@ blockquote
         font-size: 1.4375em
         color: $accent
         padding: 0
+        font-family: 'Montserrat', sans-serif
+        font-weight: 600
       .active
         border: none
   .form-search
     margin: 40px 0 20px
+    overflow: visible
+    max-width: 360px
     border: none
       radius: 0
     input
@@ -1927,15 +1931,17 @@ blockquote
     svg
       fill: $accent
   .button-group
-    justify-content: flex-start
     margin: 0 0 20px
+    max-width: 360px
+    justify-content: space-between
     .btn
-      font-size: 15px
+      font-size: 14px
       height: 38px
+      border-radius: 20px
     .btn-partner
-      max-width: 150px
+      max-width: 48%
     .btn-score
-      max-width: 150px
+      max-width: 48%
   .list-social
     margin: 0
     justify-content: flex-start
