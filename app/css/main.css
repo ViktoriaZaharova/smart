@@ -2367,7 +2367,8 @@ blockquote {
   .mobile-menu .copyright {
     color: #a5a5a5;
     font-size: 14px;
-    margin: auto 0 0; }
+    margin: auto 0 0;
+    font-weight: 300; }
 
 .mobile-menu.open {
   -webkit-box-orient: vertical;
@@ -2390,7 +2391,7 @@ blockquote {
 .smi-box {
   width: 100%;
   height: 350px;
-  background: #131313;
+  background: #212121;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
