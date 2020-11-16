@@ -1,10 +1,6 @@
-$('.main-slider').slick({
-    slidesToShow: 1,
-    dots: true,
-    prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>',
-    fade: true
-});
+// $('.main-slider').slick({
+//
+// });
 
 $('.menu li a').each(function () {
     var location = window.location.href;
@@ -31,6 +27,19 @@ $('.btn-burger').click(function () {
    $('.mobile-menu').toggleClass('open');
 });
 
+$(window).on('load resize', function() {
+    if ($(window).width() > 576) {
+        $('.main-slider:not(.slick-initialized)').slick({
+            slidesToShow: 1,
+            dots: true,
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
+            fade: true
+        });
+    } else {
+        $(".main-slider.slick-initialized").slick("unslick");
+    }
+});
 
 $("body").on("click", ".btn-scroll-top", function () {
     $("html, body").animate({
