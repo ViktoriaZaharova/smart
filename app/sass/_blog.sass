@@ -225,6 +225,10 @@
   .icon
     width: 23px
 
+.content-blog
+  .nav-breadcrumb
+    margin: 0 0 13px
+
 .content-blog-home
   background: url("../img/bg-blog.jpg") no-repeat center
     size: cover
@@ -262,6 +266,17 @@
 
 .recipes
   padding: 69px 0 60px
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    bottom: -35px
+    left: 50%
+    transform: translate(-50%,0)
+    border-left: 63px solid transparent
+    border-right: 63px solid transparent
+    border-top: 38px solid #fff
   h2
     text-transform: none
     margin: 0 0 29px
@@ -273,7 +288,7 @@
     line-height: 1.72
   .list-dots
     padding: 0 0 0 50px
-    margin: 50px 0 0
+    margin: 50px 0
     font-size: 18px
   .list-number
     padding: 0 0 0 50px
@@ -295,6 +310,7 @@
 
 .blockquote-icon
   width: 33px
+  min-width: 33px
   margin: 0 39px 0 0
 
 .color-accent
@@ -413,6 +429,81 @@
     &:last-child
       border: none
 
+.similar-articles
+  padding: 55px 0 102px
+  background: #f6f6f6
+  h3
+    text-transform: none
+    margin: 0 0 36px
+    font-size: 25px
+
+.schedule-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 0 0 45px
+
+.list-share
+  display: flex
+  align-items: center
+  li
+    margin: 0 11px 0 0
+    &:last-child
+      margin: 0
+
+.schedule-wrapper-text
+  display: flex
+  align-items: center
+  font-size: 25px
+  font-weight: 600
+  color: #464646
+  margin: 0 40px 0 0
+  .icon
+    margin: 0 17px 0 0
+
+.comments-blog
+  margin: 70px 0 0
+
+.form-comment
+  width: 100%
+  background: #fff
+  border: solid 2px #d7d7d7
+  textarea
+    border: none
+    width: 100%
+    padding: 31px 37px
+    color: #a5a5a5
+    font-size: 23px
+    height: 122px
+  label
+    width: 100%
+
+.comment-panel
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  border:
+    top: solid 2px #d7d7d7
+  padding: 4px 10px
+
+.comment-panel-item
+  margin: 0 5px 0 0
+  padding: 0 5px 0 0
+  border:
+    right: solid 2px #d7d7d7
+  &:last-child
+    margin: 0
+    padding: 0
+    border: none
+
+.user-icon
+  display: flex
+  align-items: center
+  justify-content: center
+
 
 //media
 @media (max-width: 992px)
@@ -443,6 +534,78 @@
     margin: 20px 0 0
     font-size: 16px
 
+  .recipes-box__content
+    padding: 0 30px 0 0
+
+  .recipes .list-dots, .recipes .list-number
+    margin: 20px 0
+    padding: 0
+    font-size: 16px
+
+  .recipes .box-text
+    font-size: 16px
+
+  .recipes-box h3
+    font-size: 24px
+    margin: 0 0 25px
+
+  .recipes-img
+    margin: 25px 0
+
+
+
+@media (max-width: 768px)
+  .content-blog-home__content
+    min-height: auto
+    padding: 60px 0
+
+  .content-blog-home h1
+    font-size: 50px
+
+  .recipes .box-text
+    font-size: 16px
+    line-height: normal
+
+  .recipes h2
+    font-size: 26px
+
+  .blockquote
+    padding: 20px
+    margin: 30px 0
+
+  .blockquote-icon
+    margin: 0 10px 0 0
+
+  .recipes
+    padding: 30px 0
+
+  .recipes-box__content
+    width: 100%
+    padding: 0
+    margin: 0 0 30px
+
+  .recipes-box__img
+    margin: 0 auto 30px
+    width: 100%
+    max-width: 350px
+
+  .recipes-img .img
+    max-height: 400px
+
+  .table-recipes
+    margin: 30px 0 0
+    font-size: 16px
+
+  .table-recipes .td
+    padding: 10px 15px
+
+  .form-comment textarea
+    padding: 20px
+    font-size: 16px
+
+  .comments-blog
+    margin: 30px 0 0
+
 @media (max-width: 650px)
   .header-search .form-search
     max-width: none
@@ -450,6 +613,12 @@
 
   .header-search h1
     font-size: 26px
+
+  .content-blog-home h1
+    font-size: 40px
+
+  .content-blog-home .search-card__body-footer
+    font-size: 16px
 
 @media (max-width: 575px)
   .search-card
@@ -483,3 +652,46 @@
 
   .search-card-column .search-card__img
     height: 200px
+
+  .content-blog-home h1
+    font-size: 30px
+
+  .table-head, .table-body
+    .td
+      width: 60%
+      &:first-child
+        width: 40%
+
+  .table-recipes
+    font-size: 14px
+
+  .schedule-wrapper-text
+    font-size: 18px
+    margin: 0 20px 0 0
+
+  .list-share
+    li
+      a
+        width: 40px
+        height: 40px
+
+  .similar-articles h3
+    margin: 0 0 25px
+    font-size: 24px
+
+  .schedule-wrapper
+    margin: 0 0 30px
+
+  .form-comment
+    margin: 30px auto 0
+
+  .similar-articles
+    padding: 40px 0
+
+@media (max-width: 420px)
+  .schedule-wrapper-text
+    width: 100%
+    margin: 0 auto 10px
+    text-align: center
+    justify-content: center
+
