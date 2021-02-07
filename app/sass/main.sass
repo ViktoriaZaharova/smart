@@ -1890,18 +1890,37 @@ blockquote
   left: 0
   top: 67px
   width: 100%
-  z-index: 10
+  z-index: 5
   background: #fff
   overflow-y: auto
   height: calc(100% - 67px)
   padding: 20px
-  display: none
+  transform: translateY(-150%)
+  transition: 1s
   .menu
     width: 100%
     flex-direction: column
     align-items: flex-start
+
     li
+      position: relative
+      overflow: hidden
       margin: 0 0 15px
+      &:first-child
+        a
+          transition-delay: .5s
+      &:nth-child(2)
+        a
+          transition-delay: 1.5s
+      &:nth-child(3)
+        a
+          transition-delay: 2s
+      &:nth-child(4)
+        a
+          transition-delay: 2.5s
+      &:nth-child(5)
+        a
+          transition-delay: 3s
       &:last-child
         margin: 0
       a
@@ -1910,8 +1929,15 @@ blockquote
         padding: 0
         font-family: 'Montserrat', sans-serif
         font-weight: 600
+        transition: all 1s ease
+        transform: translateY(140%)
+        transition-delay: .05s
       .active
         border: none
+  .active
+    li
+      a
+        transform: translateY(0)
   .form-search
     margin: 40px 0 20px
     overflow: visible
@@ -1955,9 +1981,8 @@ blockquote
     font-weight: 300
 
 .mobile-menu.open
-  flex-direction: column
-  display: flex
-  align-items: flex-start
+  transform: translateY(0)
+
 
 
 //smi
