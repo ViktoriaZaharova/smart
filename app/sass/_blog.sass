@@ -225,6 +225,195 @@
   .icon
     width: 23px
 
+.content-blog-home
+  background: url("../img/bg-blog.jpg") no-repeat center
+    size: cover
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(#000, .3)
+  h1
+    text-align: center
+    color: #fff
+    text-transform: none
+    margin: 0 auto 35px
+    font-size: 62px
+  .search-card__body-footer
+    margin: 0
+    justify-content: center
+    color: #fff
+    font-size: 18.5px
+    .icon
+      filter: brightness(0) invert(1)
+
+.content-blog-home__content
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  min-height: 533px
+
+.recipes
+  padding: 69px 0 60px
+  h2
+    text-transform: none
+    margin: 0 0 29px
+    font-size: 32px
+    font-weight: 600
+  .box-text
+    font-size: 18px
+    letter-spacing: 0.13px
+    line-height: 1.72
+  .list-dots
+    padding: 0 0 0 50px
+    margin: 50px 0 0
+    font-size: 18px
+  .list-number
+    padding: 0 0 0 50px
+    margin: 50px 0
+    font-size: 18px
+    li
+      &:before
+        color: $accent
+
+.blockquote
+  margin: 40px 0 78px
+  display: flex
+  align-items: flex-start
+  background: #f6f4f2
+  padding: 27px 37px
+  font-size: 21px
+  font-style: italic
+  letter-spacing: -0.42px
+
+.blockquote-icon
+  width: 33px
+  margin: 0 39px 0 0
+
+.color-accent
+  color: $accent
+
+.recipes-box
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  width: 100%
+
+  h3
+    margin: 0 0 35px
+    font-size: 25px
+    font-weight: 600
+    text-transform: none
+
+
+
+.list-dots
+  li
+    position: relative
+    margin: 0 0 10px
+    padding: 0 0 0 29px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      width: 9px
+      height: 9px
+      background: $accent
+      border-radius: 50%
+    &:last-child
+      margin: 0
+
+.recipes-box__content
+  width: calc(100% - 421px)
+  padding: 0 100px 0 0
+
+.recipes-box__img
+  width: 421px
+  margin: 0 0 60px
+  img
+    width: 100%
+
+.signature
+  font-style: italic
+  margin: 16px 0 0
+  color: #a2a1a1
+  font-size: 15px
+  line-height: 1.93
+  letter-spacing: -0.3px
+
+.recipes-img
+  margin: 28px 0 44px
+  .img
+    max-height: 510px
+    width: 100%
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.table-recipes
+  margin: 76px auto 0
+  width: 100%
+  max-width: 1162px
+  font-size: 18px
+  border-bottom: 7px solid #f6f4f2
+  .td
+    padding: 10px 60px
+
+.table-head, .table-body
+  width: 100%
+  .td
+    min-height: 73px
+    border:
+      right: solid 2px #ececec
+  .tr
+    border-bottom: solid 2px #ececec
+    width: 100%
+    display: flex
+    align-items: stretch
+
+    &:last-child
+      border: none
+
+
+.table-head
+  background: #f6f4f2
+
+  .td
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    width: 70%
+    &:first-child
+      width: 30%
+    &:last-child
+      border: none
+
+.table-body
+  .td
+    min-height: 95px
+    display: flex
+    align-items: center
+    width: 70%
+    &:first-child
+      width: 30%
+    &:last-child
+      border: none
+
+
 //media
 @media (max-width: 992px)
   .header-search
