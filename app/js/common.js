@@ -25,7 +25,6 @@ $('.btn-burger').click(function () {
     // $('.overlay').fadeIn();
     $(this).toggleClass('click');
    $('.mobile-menu').toggleClass('open');
-   $('.mobile-menu .menu').toggleClass('active');
 });
 
 $(window).on('load resize', function() {

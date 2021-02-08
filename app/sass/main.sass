@@ -325,7 +325,7 @@ input
 //header
 header
   position: relative
-  background: rgba(#fff, .9)
+  background: #fff
   border-bottom: solid 1px rgba(#dedede, .63)
 
 .header
@@ -358,6 +358,7 @@ header
       color: #1b1b1b
       font-size: 14px
       padding: 21px 0
+      line-height: 14px
       border-bottom: 2px solid transparent
       &:hover
         color: $accent
@@ -1891,12 +1892,23 @@ blockquote
   top: 67px
   width: 100%
   z-index: 5
-  background: #fff
+
   overflow-y: auto
   height: calc(100% - 67px)
   padding: 20px
-  transform: translateY(-150%)
-  transition: 1s
+  transition: all .7s ease
+  opacity: 0
+  visibility: hidden
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    background: #fff
+    width: 100%
+    height: 0
+    transition: all .5s linear
+    transition-delay: 2s
   .menu
     width: 100%
     flex-direction: column
@@ -1908,19 +1920,22 @@ blockquote
       margin: 0 0 15px
       &:first-child
         a
-          transition-delay: .5s
+          transition-delay: .3s
       &:nth-child(2)
         a
-          transition-delay: 1.5s
+          transition-delay: .6s
       &:nth-child(3)
         a
-          transition-delay: 2s
+          transition-delay: .9s
       &:nth-child(4)
         a
-          transition-delay: 2.5s
+          transition-delay: 1.2s
       &:nth-child(5)
         a
-          transition-delay: 3s
+          transition-delay: 1.5s
+      &:nth-child(6)
+        a
+          transition-delay: 1.8s
       &:last-child
         margin: 0
       a
@@ -1929,31 +1944,40 @@ blockquote
         padding: 0
         font-family: 'Montserrat', sans-serif
         font-weight: 600
-        transition: all 1s ease
+        transition: all .4s linear
         transform: translateY(140%)
-        transition-delay: .05s
+        transition-delay: .1s
+        line-height: 1
       .active
         border: none
-  .active
-    li
-      a
-        transform: translateY(0)
   .form-search
     margin: 40px 0 20px
-    overflow: visible
+    overflow: hidden
     max-width: 360px
+    width: 100%
+    height: 38px
+    transition: all 1s linear
+    transition-delay: .5s
     border: none
       radius: 0
+    position: relative
     input
       height: 38px
       padding: 0 10px 0 30px
       border: none
         radius: 0
         bottom: 2px solid $accent
+    label
+      transition: all 1s ease
+      transform: translateY(140%)
+      transition-delay: 1s
     button
       left: 0
       width: 25px
       height: 100%
+      transition-delay: 7s
+      transition: all 1.5s linear
+      opacity: 0
     svg
       fill: $accent
   .button-group
@@ -1972,16 +1996,45 @@ blockquote
     margin: 0
     justify-content: flex-start
     li
+      position: relative
+      overflow: hidden
       a
         width: 40px
+        transform: translateY(140%)
+        transition-delay: 2.9s
+        transition: all .7s linear
+      &:nth-child(2)
+        a
+          transition-delay: .3s
+      &:nth-child(3)
+        a
+          transition-delay: .6s
   .copyright
     color: #a5a5a5
     font-size: 14px
     margin: auto 0 0
     font-weight: 300
+    transform: translateY(140%)
+    transition-delay: 2.4s
+    transition: all 1s linear
 
 .mobile-menu.open
-  transform: translateY(0)
+  opacity: 1
+  visibility: visible
+  &:before
+    height: 100%
+    transition-delay: .3s
+  .menu, .list-social
+    li
+      a
+        transform: translateY(0)
+  .copyright
+    transform: translateY(0)
+  .form-search
+    label
+      transform: translateY(0)
+    button
+      opacity: 1
 
 
 
