@@ -67,12 +67,16 @@
   .copyright
     text-align: right
     color: #fff
-    margin: 0
-    justify-content: flex-end
-    height: 100%
+    margin: 0 0 0 auto
+    width: auto
   .logo-footer
     img
       filter: brightness(0) invert(1)
+  .list-social
+    margin: 0 0 0 29px
+    li
+      a
+        filter: brightness(0) invert(1)
 
 .content-search
   padding: 40px 0 73px
@@ -136,7 +140,6 @@
       border-bottom-color: $accent
 
 .search-card
-  margin: 0 0 16px
   background: #fff
   width: 100%
   padding: 28px 49px 30px 30px
@@ -145,6 +148,7 @@
   flex-wrap: wrap
   color: #1c1c1c
   h3
+    color: #1c1c1c
     font-size: 30px
     font-weight: 600
     text-decoration: underline
@@ -156,6 +160,19 @@
     margin: 0
   .box-text
     letter-spacing: 0.11px
+
+.search-card__title
+  color: #1c1c1c
+  font-size: 30px
+  font-weight: 600
+  text-decoration: underline
+  margin: 0 0 29px
+  text-transform: none
+  letter-spacing: -0.6px
+  font-family: 'Montserrat', sans-serif
+  &:hover
+    color: $accent
+
 
 .search-card__img
   width: 357px
@@ -192,7 +209,7 @@
     display: flex
     flex-direction: column
     align-items: flex-start
-  h3
+  .search-card__title
     margin: 0 0 24px
   .box-text
     max-width: 343px
@@ -523,9 +540,10 @@
     &__body
       width: calc(100% - 250px)
       padding: 0 0 0 30px
-    h3
-      font-size: 24px
-      margin: 0 0 20px
+
+  .search-card__title
+    font-size: 24px
+    margin: 0 0 20px
 
   .content-search
     padding: 30px 0
@@ -636,6 +654,7 @@
     .logo-footer
       display: flex
       max-width: 200px
+      margin: 0 auto 10px
 
   .search-category, .content-search-subtitle
     font-size: 16px
@@ -687,6 +706,15 @@
 
   .similar-articles
     padding: 40px 0
+
+  .footer-search
+    .copyright
+      margin: 0 auto 10px
+      width: 100%
+      text-align: center
+      justify-content: center
+    .list-social
+      margin: 0 auto
 
 @media (max-width: 420px)
   .schedule-wrapper-text

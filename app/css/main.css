@@ -2297,7 +2297,7 @@ blockquote {
 .mobile-menu {
   position: fixed;
   left: 0;
-  top: 67px;
+  top: 58px;
   width: 100%;
   z-index: 5;
   background: #fff;
@@ -2734,14 +2734,16 @@ blockquote {
   .footer-search .copyright {
     text-align: right;
     color: #fff;
-    margin: 0;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: 100%; }
+    margin: 0 0 0 auto;
+    width: auto; }
   .footer-search .logo-footer img {
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1); }
+  .footer-search .list-social {
+    margin: 0 0 0 29px; }
+    .footer-search .list-social li a {
+      -webkit-filter: brightness(0) invert(1);
+              filter: brightness(0) invert(1); }
 
 .content-search {
   padding: 40px 0 73px;
@@ -2818,7 +2820,6 @@ blockquote {
       border-bottom-color: #ff5a00; }
 
 .search-card {
-  margin: 0 0 16px;
   background: #fff;
   width: 100%;
   padding: 28px 49px 30px 30px;
@@ -2832,6 +2833,7 @@ blockquote {
       flex-wrap: wrap;
   color: #1c1c1c; }
   .search-card h3 {
+    color: #1c1c1c;
     font-size: 30px;
     font-weight: 600;
     text-decoration: underline;
@@ -2843,6 +2845,18 @@ blockquote {
     margin: 0; }
   .search-card .box-text {
     letter-spacing: 0.11px; }
+
+.search-card__title {
+  color: #1c1c1c;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin: 0 0 29px;
+  text-transform: none;
+  letter-spacing: -0.6px;
+  font-family: 'Montserrat', sans-serif; }
+  .search-card__title:hover {
+    color: #ff5a00; }
 
 .search-card__img {
   width: 357px;
@@ -2898,7 +2912,7 @@ blockquote {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
-  .search-card-column h3 {
+  .search-card-column .search-card__title {
     margin: 0 0 24px; }
   .search-card-column .box-text {
     max-width: 343px;
@@ -3288,9 +3302,9 @@ blockquote {
     .search-card__body {
       width: calc(100% - 250px);
       padding: 0 0 0 30px; }
-    .search-card h3 {
-      font-size: 24px;
-      margin: 0 0 20px; }
+  .search-card__title {
+    font-size: 24px;
+    margin: 0 0 20px; }
   .content-search {
     padding: 30px 0; }
   .pagination-search {
@@ -3380,7 +3394,8 @@ blockquote {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 200px; }
+    max-width: 200px;
+    margin: 0 auto 10px; }
   .search-category, .content-search-subtitle {
     font-size: 16px; }
   .content-search-subtitle {
@@ -3414,7 +3429,16 @@ blockquote {
   .form-comment {
     margin: 30px auto 0; }
   .similar-articles {
-    padding: 40px 0; } }
+    padding: 40px 0; }
+  .footer-search .copyright {
+    margin: 0 auto 10px;
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer-search .list-social {
+    margin: 0 auto; } }
 
 @media (max-width: 420px) {
   .schedule-wrapper-text {
