@@ -42,6 +42,16 @@
     bottom: 20px
     right: 20px
 
+  .btn-smi
+    font-size: 12px
+    max-width: 130px
+
+  .online-application
+    padding: 40px
+    .form-group
+      max-width: 48%
+
+
 @media only screen and (max-width : 992px)
   .btn-partner
     max-width: 80px
@@ -96,6 +106,12 @@
   .form-group
     max-width: 380px
 
+  .btn-smi
+    max-width: none
+
+  .btn-smi:last-child
+    margin: 0
+
 @media only screen and (max-width : 900px)
   .main-slider__image
     max-width: 280px
@@ -115,6 +131,31 @@
 
   .form-group
     max-width: 360px
+
+  .online-application
+    margin: 30px 0 0
+    padding: 30px
+    .form-group
+      max-width: none
+      width: 100%
+    h2
+      margin: 0 0 15px
+    .form-group__file
+      margin: 0 0 30px
+
+  .callback-partner
+    .box-text
+      font-size: 16px
+
+  .callback-partner__icon
+    margin: 0 auto 30px
+
+  .partner .box-text
+    margin: 0
+    font-size: 14px
+
+  .partner-slider
+    margin: 30px 0 0
 
 @media only screen and (max-width : 850px)
   .logo
@@ -307,6 +348,14 @@
   .form-group .form-group__file
     margin: 20px 0 0
     padding: 0 10px
+
+  .btn-smi
+    margin: 10px auto 0
+    &:last-child
+      margin: 10px auto 0
+
+  .links-politics
+    justify-content: center
 
 @media only screen and (max-width : 730px)
   .main-slider__image
@@ -534,6 +583,13 @@
     top: 0
     height: 100%
 
+  footer .btn-call
+    display: flex
+    height: 40px
+    border-radius: 10px
+    font-size: 14px
+    text-transform: uppercase
+
 @media only screen and (max-width : 500px)
   header
     background: $accent
@@ -588,24 +644,39 @@
     height: 40px
     padding: 10px
 
+  .callback-partner__icon
+    max-width: 60px
+
+  .online-application
+    padding: 20px
+
+  .online-application .form-group .label-file-partner
+    width: 100%
+    margin: 0 0 20px
+    max-width: none
+    justify-content: flex-start
+
+  .online-application .dropdown-form .dropDown-item
+    padding: 17px 15px
+    font-size: 13px
+
+  .online-application label input, .online-application label textarea
+    padding: 0 15px
+    font-size: 13px
+
+  .online-application label textarea
+    padding: 15px
+
+  .online-application .label-error .form-error
+    padding: 0 0 0 15px
+
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 440px)
   .form-search__header
     width: 240px
 
 @media only screen and (max-width : 420px)
-  //.main-slider__text .item-text
-  //  font-size: 12px
-  //  width: 290px
-  //  height: 200px
-  //  padding: 20px 20px 25px 50px
-  //  margin: 0 auto 30px
-
-  //.name-products__slide
-  //  font-size: 16px
-  //  margin: 0 0 15px
-    //padding: 0 0 10px
-
   .main-slider__content:before
     right: auto
     left: 50%

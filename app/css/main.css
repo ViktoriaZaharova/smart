@@ -704,7 +704,7 @@ header .button-group {
               justify-content: center; }
 
 .list-social__text {
-  font-size: 12px;
+  font-size: 11px;
   color: #3b3b3b;
   max-width: 97px;
   margin: 0 0 0 auto; }
@@ -2628,7 +2628,7 @@ blockquote {
 
 .btn-smi {
   max-width: 185px;
-  margin: 20px auto 0;
+  margin: 0 auto 10px;
   height: 50px;
   font-size: 15.5px;
   padding: 8px 0;
@@ -2636,6 +2636,160 @@ blockquote {
   .btn-smi img {
     width: 32px;
     margin: 0 8px 0 0; }
+
+.links-politics {
+  margin: 10px auto 0;
+  font-size: 11px;
+  color: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .links-politics__text {
+    text-decoration: underline;
+    max-width: 170px; }
+  .links-politics__icon {
+    margin: 0 9px 0 0;
+    width: 28px;
+    min-width: 28px; }
+
+.partner .box-text {
+  color: #1b1b1b;
+  margin: 13px 0 0; }
+
+.partner-slider {
+  width: 100%;
+  margin: 44px 0 0; }
+
+.callback-partner {
+  padding: 56px 0 66px; }
+  .callback-partner .box-text {
+    max-width: 940px;
+    width: 100%;
+    color: #1b1b1b;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 1.15;
+    letter-spacing: 0.14px;
+    text-align: center; }
+
+.callback-partner__icon {
+  max-width: 116px;
+  width: 100%;
+  margin: 0 auto 48px; }
+
+.online-application {
+  margin: 63px 0 0;
+  padding: 85px 100px 124px;
+  background: url("../img/bg-callback-partner.png") no-repeat center top;
+    background-size: cover; }
+  .online-application h2 {
+    margin: 0 0 40px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #1b1b1b;
+    line-height: 1.82; }
+  .online-application .form-group {
+    max-width: 448px; }
+    .online-application .form-group label {
+      margin: 0 0 27px; }
+      .online-application .form-group label:last-child {
+        margin: 0; }
+    .online-application .form-group .label-file-partner {
+      margin: 0; }
+  .online-application .decor-item {
+    font-size: 18px;
+    right: 8px;
+    top: 14px;
+    position: absolute; }
+  .online-application label {
+    position: relative; }
+    .online-application label input, .online-application label textarea {
+      width: 100%; }
+  .online-application .dropdown-form {
+    width: 100%; }
+  .online-application .dropdown-form .dropDown-item {
+    background: #fff;
+    padding: 17.5px 20px;
+    color: #595858;
+    border: solid 1px #eaeaea;
+      border-radius: 7px; }
+  .online-application input {
+    height: 55px;
+    border: solid 1px #eaeaea; }
+  .online-application textarea {
+    border: solid 1px #eaeaea;
+    height: 137px; }
+  .online-application .label-error input {
+    border: solid 1.5px #ff4e00; }
+  .online-application .label-error .form-error {
+    position: absolute;
+    top: calc(100% + 5px); }
+  .online-application .form-group__file, .online-application .form-group-button {
+    margin: 0; }
+  .online-application .form-callback button {
+    margin: 0 auto 0 0; }
+  .online-application .label-file-partner {
+    max-width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border: none;
+      border-radius: 0;
+    text-align: left;
+    margin: 0;
+    height: auto; }
+    .online-application .label-file-partner .icon {
+      width: 29px;
+      min-width: 29px;
+      margin: 0 11px 0 0; }
+  .online-application .attach-file__size {
+    padding: 0;
+    color: #7f7f7f;
+    font-size: 12px;
+    letter-spacing: -0.24px; }
+  .online-application .dropdown-form .dropdown-menu {
+    border: solid 1px #eaeaea;
+      border-top: none; }
+  .online-application .dropdown.show .dropDown-item {
+    border-radius: 7px 7px 0 0; }
+  .online-application .list-callback li a {
+    padding: 11px 12px; }
+
+.label-file-partner__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.label-file-partner__title {
+  text-decoration: underline;
+  margin: 0 0 4px;
+  color: #3e3e3e;
+  font-size: 14.5px; }
+
+.required-fields {
+  width: 100%;
+  text-align: right;
+  margin: 0 0 9px;
+  color: #8d8c8c;
+  font-size: 10px; }
+  .required-fields sup {
+    font-family: 'bebas', sans-serif;
+    font-size: 11px;
+    margin: 0 4px 0 0;
+    letter-spacing: -0.36px; }
 
 .header-search {
   padding: 23px 0 47px;
@@ -3455,7 +3609,14 @@ blockquote {
     margin: 70px 0 50px; }
   .btn-scroll-top {
     bottom: 20px;
-    right: 20px; } }
+    right: 20px; }
+  .btn-smi {
+    font-size: 12px;
+    max-width: 130px; }
+  .online-application {
+    padding: 40px; }
+    .online-application .form-group {
+      max-width: 48%; } }
 
 @media only screen and (max-width: 992px) {
   .btn-partner {
@@ -3496,7 +3657,11 @@ blockquote {
       padding: 21px 0;
       font-size: 12px; }
   .form-group {
-    max-width: 380px; } }
+    max-width: 380px; }
+  .btn-smi {
+    max-width: none; }
+  .btn-smi:last-child {
+    margin: 0; } }
 
 @media only screen and (max-width: 900px) {
   .main-slider__image {
@@ -3510,7 +3675,26 @@ blockquote {
   .callback {
     padding: 45px 0; }
   .form-group {
-    max-width: 360px; } }
+    max-width: 360px; }
+  .online-application {
+    margin: 30px 0 0;
+    padding: 30px; }
+    .online-application .form-group {
+      max-width: none;
+      width: 100%; }
+    .online-application h2 {
+      margin: 0 0 15px; }
+    .online-application .form-group__file {
+      margin: 0 0 30px; }
+  .callback-partner .box-text {
+    font-size: 16px; }
+  .callback-partner__icon {
+    margin: 0 auto 30px; }
+  .partner .box-text {
+    margin: 0;
+    font-size: 14px; }
+  .partner-slider {
+    margin: 30px 0 0; } }
 
 @media only screen and (max-width: 850px) {
   .logo {
@@ -3662,7 +3846,15 @@ blockquote {
       font-size: 16px; }
   .form-group .form-group__file {
     margin: 20px 0 0;
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  .btn-smi {
+    margin: 10px auto 0; }
+    .btn-smi:last-child {
+      margin: 10px auto 0; }
+  .links-politics {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media only screen and (max-width: 730px) {
   .main-slider__image {
@@ -3854,7 +4046,15 @@ blockquote {
   .mobile-menu {
     padding: 80px 20px 20px;
     top: 0;
-    height: 100%; } }
+    height: 100%; }
+  footer .btn-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase; } }
 
 @media only screen and (max-width: 500px) {
   header {
@@ -3892,7 +4092,28 @@ blockquote {
   .btn-scroll-top {
     width: 40px;
     height: 40px;
-    padding: 10px; } }
+    padding: 10px; }
+  .callback-partner__icon {
+    max-width: 60px; }
+  .online-application {
+    padding: 20px; }
+  .online-application .form-group .label-file-partner {
+    width: 100%;
+    margin: 0 0 20px;
+    max-width: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .online-application .dropdown-form .dropDown-item {
+    padding: 17px 15px;
+    font-size: 13px; }
+  .online-application label input, .online-application label textarea {
+    padding: 0 15px;
+    font-size: 13px; }
+  .online-application label textarea {
+    padding: 15px; }
+  .online-application .label-error .form-error {
+    padding: 0 0 0 15px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 440px) {
