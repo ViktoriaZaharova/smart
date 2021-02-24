@@ -2951,6 +2951,16 @@ blockquote {
       border-bottom: 4px solid transparent; }
     .pagination-search li .active {
       border-bottom-color: #ff5a00; }
+    .pagination-search li:first-child {
+      margin: 0 20px 0 0; }
+      .pagination-search li:first-child .pagination-prev {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        border: none; }
+        .pagination-search li:first-child .pagination-prev img {
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg); }
 
 .search-card {
   background: #fff;
