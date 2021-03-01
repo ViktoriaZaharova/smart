@@ -22,6 +22,7 @@
       rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
+
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -156,13 +157,22 @@
 
     <div class="partner-slider">
       <div class="slide">
-        <div class="partner-slider-box"><img src="img/bg-partners.jpg" alt=""></div>
+        <div class="partner-slider-box">
+          <img src="img/bg-partners.jpg" alt="">
+          <img src="img/slider-mob.jpg" class="img-slider-mob" alt="">
+        </div>
       </div>
       <div class="slide">
-        <div class="partner-slider-box"><img src="img/bg-partners.jpg" alt=""></div>
+        <div class="partner-slider-box">
+          <img src="img/bg-partners.jpg" alt="">
+          <img src="img/slider-mob.jpg" class="img-slider-mob" alt="">
+        </div>
       </div>
       <div class="slide">
-        <div class="partner-slider-box"><img src="img/bg-partners.jpg" alt=""></div>
+        <div class="partner-slider-box">
+          <img src="img/bg-partners.jpg" alt="">
+          <img src="img/slider-mob.jpg" class="img-slider-mob" alt="">
+        </div>
       </div>
     </div>
 
@@ -196,11 +206,10 @@
                     </div>
                     <div class="dropdown-menu scroll-vertical" aria-labelledby="dropdownBox">
                       <ul class="list-callback">
-                        <li><a href="#" class="active">По вопросам рекламы</a></li>
-                        <li><a href="#">По вопросам качества</a></li>
-                        <li><a href="#">По трудоустройству</a></li>
-                        <li><a href="#">По трудоустройству</a></li>
-                        <li><a href="#">По трудоустройству</a></li>
+                        <li><a href="#" class="active">Дистрибуция</a></li>
+                        <li><a href="#">Реклама</a></li>
+                        <li><a href="#">Семенной материал</a></li>
+                        <li><a href="#">Кросс-партнерство</a></li>
                       </ul>
                     </div>
                   </div>
@@ -230,7 +239,8 @@
 
                 <div class="form-group">
                   <label>
-                    <input type="text" placeholder="Телефон " name="phone">
+                    <input type="text" placeholder="Телефон " name="phone" required>
+                    <span class="decor-item">*</span>
                   </label>
 
                   <label>
@@ -241,8 +251,7 @@
 
                 <div class="form-group">
                   <label>
-                    <textarea name="message" placeholder="Текст сообщения"></textarea>
-                    <span class="decor-item">*</span>
+                    <textarea name="message" placeholder="Ваше обращение"></textarea>
                   </label>
                 </div>
 
@@ -294,7 +303,7 @@
             <a href="#" class="btn btn-accent btn-call">обратная связь</a>
           </div>
 
-          <div class="col-12 col-sm-7 col-md-3 col-lg-3 d-none d-sm-block">
+          <div class="col-12 col-sm-7 col-md-3 col-lg-4 d-none d-sm-block">
             <div class="footer-box">
               <div class="footer-box__icon"><img src="img/location.svg" alt=""></div>
               <div class="footer-box__text">456217, Челябинская область, г. Златоуст,
@@ -313,14 +322,14 @@
             </a>
           </div>
 
-          <div class="col-md-3 col-lg-4 d-none d-sm-block">
+          <div class="col-md-3 col-lg-3 d-none d-sm-block">
             <div class="button-group">
               <a href="smi.html" class="btn btn-accent btn-smi">
-                <img src="img/smi.png" alt="">
+                <img src="img/smi.svg" alt="">
                 Мы в СМИ
               </a>
               <a href="smi.html" class="btn btn-accent btn-smi">
-                <img src="img/comment2.svg" alt="">
+                <img src="img/blog.svg" alt="">
                 Блог
               </a>
             </div>

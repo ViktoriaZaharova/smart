@@ -561,7 +561,8 @@ header
   display: flex
   align-items: center
   justify-content: flex-end
-  margin: 6px 0 0
+  margin: 6px 35px 0 auto
+  max-width: 100px
   li
     margin: 0 13px 0 0
     &:last-child
@@ -576,7 +577,7 @@ header
   font-size: 11px
   color: #3b3b3b
   max-width: 97px
-  margin: 0 0 0 auto
+  margin: 0 35px 0 auto
 
 .footer-box
   font-size: 12px
@@ -588,7 +589,7 @@ header
     margin: 0
 
 .footer-box__text
-  max-width: 228px
+  max-width: 250px
   margin: 0 0 0 11px
 
 .phone
@@ -599,7 +600,7 @@ header
   min-width: 12px
 
 .copyright
-  margin: 20px 0 0
+  margin: 16px 0 0
   font-size: 10px
   color: #a5a5a5
   width: 100%
@@ -1902,16 +1903,6 @@ blockquote
   visibility: hidden
   transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1)
   will-change: height
-  //&:before
-  //  content: ''
-  //  position: absolute
-  //  left: 0
-  //  top: 0
-  //  background: #fff
-  //  width: 100%
-  //  height: 0
-  //  transition: all .5s linear
-  //  transition-delay: 2s
   .menu
     width: 100%
     flex-direction: column
@@ -2163,18 +2154,18 @@ blockquote
 
 
 .btn-smi
-  max-width: 185px
-  margin: 0 auto 10px
-  height: 50px
-  font-size: 15.5px
+  max-width: 137px
+  margin: 0 0 10px
+  height: 37px
+  font-size: 12px
   padding: 8px 0
   border-radius: 25px
   img
-    width: 32px
+    width: 24px
     margin: 0 8px 0 0
 
 .links-politics
-  margin: 10px auto 0
+  margin: 12px auto 0
   font-size: 11px
   color: #262626
   display: flex
@@ -2195,6 +2186,33 @@ blockquote
 .partner-slider
   width: 100%
   margin: 44px 0 0
+  .slick-arrow
+    width: 57px
+    height: 57px
+    &:before
+      display: none
+  .slick-next
+    background: url("../img/slick-next.png") no-repeat center
+      size: contain
+    right: 51px
+  .slick-prev
+    background: url("../img/slick-prev.png") no-repeat center
+      size: contain
+    left: 51px
+  .slick-dots
+    justify-content: center
+    bottom: 29px
+    li
+      border: 2px solid #fff
+      width: 14px
+      height: 14px
+      background: transparent
+    .slick-active
+      background: #fff
+
+.partner-slider-box
+  .img-slider-mob
+    display: none
 
 .callback-partner
   padding: 56px 0 66px
