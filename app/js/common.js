@@ -26,10 +26,10 @@ $('.overlay').click(function () {
 $('.btn-burger').click(function () {
     // $('.overlay').fadeIn();
     $(this).toggleClass('click');
-   $('.mobile-menu').toggleClass('open');
+    $('.mobile-menu').toggleClass('open');
 });
 
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     if ($(window).width() > 576) {
         $('.main-slider:not(.slick-initialized)').slick({
             slidesToShow: 1,
@@ -49,6 +49,12 @@ $("body").on("click", ".btn-scroll-top", function () {
     }, "slow")
 });
 
+
+// language mobile
+$('.language-item__links').on('click', function () {
+    $('.language-item__links').removeClass('lang-disable');
+    $(this).addClass('lang-disable');
+});
 
 
 // модальные окна (несколько)

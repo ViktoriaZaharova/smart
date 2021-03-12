@@ -690,7 +690,7 @@ header .button-group {
   max-width: 100px; }
   .list-social li {
     margin: 0 13px 0 0; }
-    .list-social li:last-child {
+    .list-social li:last-child:not(.language-item) {
       margin: 0; }
     .list-social li a {
       width: 24px;
@@ -703,6 +703,10 @@ header .button-group {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+    .list-social li .lang-disable {
+      display: none; }
+  .list-social .language-item {
+    margin: 0 0 0 auto; }
 
 .list-social__text {
   font-size: 11px;
@@ -2632,11 +2636,13 @@ blockquote {
   margin: 0 0 10px;
   height: 37px;
   font-size: 12px;
-  padding: 8px 0;
-  border-radius: 25px; }
+  padding: 8px 20px 8px 30px;
+  border-radius: 25px;
+  position: relative; }
   .btn-smi img {
     width: 24px;
-    margin: 0 8px 0 0; }
+    position: absolute;
+    left: 10px; }
 
 .links-politics {
   margin: 12px auto 0;
@@ -2819,6 +2825,41 @@ blockquote {
     font-size: 11px;
     margin: 0 4px 0 0;
     letter-spacing: -0.36px; }
+
+.language-wrapper {
+  position: relative;
+  margin: 0 0 0 17px; }
+  .language-wrapper:hover .language-menu {
+    display: block; }
+
+.language-menu {
+  position: absolute;
+  left: -9px;
+  top: -9px;
+  background: #ffff;
+  z-index: 2;
+  border-radius: 15.5px;
+  border: solid 1px #eeeeee;
+  padding: 31px 11px 9px 8px;
+  display: none; }
+  .language-menu .btn-lang__text {
+    text-decoration: underline; }
+
+.btn-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  position: relative;
+  z-index: 3; }
+  .btn-lang__icon {
+    width: 13px;
+    height: 13px;
+    margin: 0 4px 0 0; }
 
 .header-search {
   padding: 23px 0 47px;
@@ -4125,6 +4166,8 @@ blockquote {
     background: #ff5a00; }
     header .container {
       padding: 0; }
+    header .language-wrapper {
+      display: none; }
   .btn-burger {
     margin: 0 20px 0 0; }
     .btn-burger span {

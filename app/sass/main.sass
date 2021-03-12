@@ -565,13 +565,18 @@ header
   max-width: 100px
   li
     margin: 0 13px 0 0
-    &:last-child
+    &:last-child:not(.language-item)
       margin: 0
     a
       width: 24px
       display: flex
       align-items: center
       justify-content: center
+    .lang-disable
+      display: none
+  .language-item
+    margin: 0 0 0 auto
+
 
 .list-social__text
   font-size: 11px
@@ -2158,11 +2163,14 @@ blockquote
   margin: 0 0 10px
   height: 37px
   font-size: 12px
-  padding: 8px 0
+  padding: 8px 20px 8px 30px
   border-radius: 25px
+  position: relative
   img
     width: 24px
-    margin: 0 8px 0 0
+    position: absolute
+    left: 10px
+
 
 .links-politics
   margin: 12px auto 0
@@ -2339,6 +2347,38 @@ blockquote
     margin: 0 4px 0 0
     letter-spacing: -0.36px
 
+.language-wrapper
+  position: relative
+  margin: 0 0 0 17px
+  &:hover
+    .language-menu
+      display: block
+
+.language-menu
+  position: absolute
+  left: -9px
+  top: -9px
+  background: #ffff
+  z-index: 2
+  border-radius: 15.5px
+  border: solid 1px #eeeeee
+  padding: 31px 11px 9px 8px
+  display: none
+  .btn-lang
+    &__text
+      text-decoration: underline
+
+.btn-lang
+  display: flex
+  align-items: center
+  text-transform: uppercase
+  color: #1b1b1b
+  position: relative
+  z-index: 3
+  &__icon
+    width: 13px
+    height: 13px
+    margin: 0 4px 0 0
 
 
 
