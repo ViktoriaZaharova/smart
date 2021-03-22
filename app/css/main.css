@@ -836,21 +836,19 @@ header .button-group {
   font-size: 14px; }
   .list-number li {
     margin: 0 0 15px;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+    position: relative; }
+    .list-number li a {
+      display: inline-block; }
     .list-number li:last-child {
       margin: 0; }
     .list-number li:before {
-      content: counter(item, decimal-leading-zero) ".";
+      content: counters(item, ".") ".";
       display: inline-block;
       counter-increment: item;
       font-weight: 600;
       margin: 0 5px 0 0; }
+    .list-number li ul {
+      margin: 10px 0; }
 
 .btn-border {
   border: dashed 2px #b6b6b6;
@@ -3248,6 +3246,13 @@ blockquote {
     font-size: 18px; }
     .recipes .list-number li:before {
       color: #ff5a00; }
+    .recipes .list-number li ul {
+      margin: 20px 0;
+      padding: 0 0 0 20px; }
+    .recipes .list-number li a {
+      color: #333; }
+  .recipes strong {
+    font-weight: bold; }
 
 .blockquote {
   margin: 40px 0 78px;
@@ -3280,7 +3285,10 @@ blockquote {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  margin: 0 0 30px; }
+  .recipes-box:last-child {
+    margin: 0; }
   .recipes-box h3 {
     margin: 0 0 35px;
     font-size: 25px;
@@ -3324,7 +3332,7 @@ blockquote {
   letter-spacing: -0.3px; }
 
 .recipes-img {
-  margin: 28px 0 44px; }
+  margin: 28px auto 44px; }
   .recipes-img .img {
     max-height: 510px;
     width: 100%;
@@ -3381,11 +3389,18 @@ blockquote {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 70%; }
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
     .table-head .td:first-child {
-      width: 30%; }
+      -webkit-box-flex: 2;
+          -ms-flex: 2;
+              flex: 2; }
     .table-head .td:last-child {
-      border: none; }
+      border: none;
+      -webkit-box-flex: 3;
+          -ms-flex: 3;
+              flex: 3; }
 
 .table-body .td {
   min-height: 95px;
@@ -3395,11 +3410,18 @@ blockquote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%; }
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
   .table-body .td:first-child {
-    width: 30%; }
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2; }
   .table-body .td:last-child {
-    border: none; }
+    border: none;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3; }
 
 .similar-articles {
   padding: 55px 0 102px;

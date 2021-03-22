@@ -1,4 +1,5 @@
 //новые страницы поиск и блог
+@import "vars"
 
 //search result pages
 .header-search
@@ -321,6 +322,14 @@
     li
       &:before
         color: $accent
+      ul
+        margin: 20px 0
+        padding: 0 0 0 20px
+      a
+        color: #333
+
+  strong
+    font-weight: bold
 
 .blockquote
   margin: 40px 0 78px
@@ -345,7 +354,9 @@
   align-items: flex-start
   flex-wrap: wrap
   width: 100%
-
+  margin: 0 0 30px
+  &:last-child
+    margin: 0
   h3
     margin: 0 0 35px
     font-size: 25px
@@ -391,7 +402,7 @@
   letter-spacing: -0.3px
 
 .recipes-img
-  margin: 28px 0 44px
+  margin: 28px auto 44px
   .img
     max-height: 510px
     width: 100%
@@ -436,22 +447,24 @@
     display: flex
     align-items: center
     flex-wrap: wrap
-    width: 70%
+    flex: 1
     &:first-child
-      width: 30%
+      flex: 2
     &:last-child
       border: none
+      flex: 3
 
 .table-body
   .td
     min-height: 95px
     display: flex
     align-items: center
-    width: 70%
+    flex: 1
     &:first-child
-      width: 30%
+      flex: 2
     &:last-child
       border: none
+      flex: 3
 
 .similar-articles
   padding: 55px 0 102px
