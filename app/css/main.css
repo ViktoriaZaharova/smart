@@ -3184,6 +3184,11 @@ blockquote {
     text-transform: none;
     margin: 0 auto 35px;
     font-size: 62px; }
+  .content-blog-home h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 62px;
+    margin: 0 auto 35px; }
   .content-blog-home .search-card__body-footer {
     margin: 0;
     -webkit-box-pack: center;
@@ -3253,6 +3258,9 @@ blockquote {
       color: #333; }
   .recipes strong {
     font-weight: bold; }
+  .recipes .maintenance ul {
+    margin: 10px 0 0;
+    padding: 0 0 0 20px; }
 
 .blockquote {
   margin: 40px 0 78px;
@@ -3364,7 +3372,7 @@ blockquote {
 .table-head, .table-body {
   width: 100%; }
   .table-head .td, .table-body .td {
-    min-height: 73px;
+    min-height: 50px;
     border-right: solid 2px #ececec; }
   .table-head .tr, .table-body .tr {
     border-bottom: solid 2px #ececec;
@@ -3403,7 +3411,7 @@ blockquote {
               flex: 3; }
 
 .table-body .td {
-  min-height: 95px;
+  min-height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3522,6 +3530,79 @@ blockquote {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.maintenance {
+  padding: 30px;
+  background: #f2efed;
+  margin: 20px 0;
+  border-radius: 10px; }
+  .maintenance ul {
+    margin: 10px 0 0; }
+
+.table-article .bg-light-red {
+  position: relative; }
+  .table-article .bg-light-red p {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 0 auto; }
+
+.bg-light-red:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #dbecf5; }
+
+.bg-light-red-29:before {
+  width: 29%; }
+
+.bg-light-red-8:before {
+  width: 8%; }
+
+.bg-light-red-77:before {
+  width: 77%; }
+
+.bg-light-red-39:before {
+  width: 39%; }
+
+.bg-light-red-44:before {
+  width: 44%; }
+
+.bg-light-red-14:before {
+  width: 14%; }
+
+.bg-light-red-35:before {
+  width: 35%; }
+
+.bg-light-red-40:before {
+  width: 40%; }
+
+.bg-light-red-59:before {
+  width: 59%; }
+
+.bg-light-red-70:before {
+  width: 70%; }
+
+.bg-light-red-21:before {
+  width: 21%; }
+
+.bg-light-red-32:before {
+  width: 32%; }
+
+.bg-light-red-24:before {
+  width: 24%; }
+
+.bg-light-red-92:before {
+  width: 92%; }
+
+.value-max {
+  padding: 2px 15px;
+  border: 1px solid #fff;
+    border-radius: 3px;
+  color: #fff;
+  background: #ff7b7b; }
+
 @media (max-width: 992px) {
   .header-search {
     padding: 30px 0; }
@@ -3563,7 +3644,7 @@ blockquote {
   .content-blog-home__content {
     min-height: auto;
     padding: 60px 0; }
-  .content-blog-home h1 {
+  .content-blog-home h1, .content-blog-home__content h2 {
     font-size: 50px; }
   .recipes .box-text {
     font-size: 16px;
@@ -3589,7 +3670,7 @@ blockquote {
     max-height: 400px; }
   .table-recipes {
     margin: 30px 0 0;
-    font-size: 16px; }
+    font-size: 14px; }
   .table-recipes .td {
     padding: 10px 15px; }
   .form-comment textarea {
@@ -3642,14 +3723,20 @@ blockquote {
     max-width: none; }
   .search-card-column .search-card__img {
     height: 200px; }
-  .content-blog-home h1 {
+  .content-blog-home h1, .content-blog-home__content h2 {
     font-size: 30px; }
-  .table-head .td, .table-body .td {
-    width: 60%; }
-    .table-head .td:first-child, .table-body .td:first-child {
-      width: 40%; }
+  .table-head .td:last-child, .table-body .td:last-child {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2; }
+  .table-head .td:first-child, .table-body .td:first-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .table-recipes .td {
+    padding: 10px 5px; }
   .table-recipes {
-    font-size: 14px; }
+    font-size: 12px; }
   .schedule-wrapper-text {
     font-size: 18px;
     margin: 0 20px 0 0; }
@@ -3682,7 +3769,9 @@ blockquote {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .table-recipes {
+    font-size: 8px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1199px) {
